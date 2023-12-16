@@ -1,0 +1,83 @@
+JavaScript Introduction (08/12/2023)
+
+HTML - Provides Structure
+CSS - Provides Beautification
+JS - Provides Dyanamic Data
+
+What is JavaScript ?
+
+* Javascript is client side and server side scripting language.
+It is mainly focus on client Side
+
+* It has upto 14 Lac Libraries and the count is continously increasing.
+
+* Famous Javascript libraries include jQuery , ReactJS and VueJS.
+
+* Famouse Javascript Frameworks include NextJS and NodeJS.
+
+* It is Synchronous Scripting Language.
+
+* It is Case Sensitive Scripting language.
+
+* JavaScript is the world's largest programming language used all over the World.
+
+* Worldwide, 95% of users utilize Javascript.
+
+* Javascript is used for the dynamic and lively functionality of websites.
+
+>> Client side scripting language means Browers Readability.
+
+>> Server side means SERVER side scripting langauge.
+More language used in server side like PHP, PYTHON, JAVA, JAVASCRIPT, NODEJS and DOTNET.
+
+>> Javascript doest not read by Browser.
+
+>> Pebble Software is install in every browser to read for JavaSCript.
+
+>> In JS, Programming Fundamentals are to be implemented.
+
+
+** Two types of Priorities in JS ** 
+1. Internal
+2. External
+
+1. INTERNAL JS
+
+<script>
+
+{
+  Coding
+}
+
+</script>
+
+
+2. EXTERBAL JS
+
+<script src="./something.js">
+
+
+</script>
+
+
+** Three Types of Variables **
+1. var
+2. let
+3. const
+
+1. VAR
+>> in VAR. the variable should be Re-Declare and Re-Assign.
+>> It is Global Scope - Access from whole coding.
+
+2. LET
+>> In LET, the variable should not be Re-Declare
+but
+it we can Re-Assign the variable in LET.
+>> It is LOCAL SCOPE
+
+3. CONST
+>> In CONST, the variable should not be Re-Declare and Also we can not Re-Assign the variable in CONST.
+>> It is BLOCK SCOPE.
+
+// Curly Braces means OBJECT
+>> in LET, We can RE-DECLARE variable in Curly Braces {} (OBJECT) and NOT RE-DECLARE out of OBJECT (Curley Braces {}).
