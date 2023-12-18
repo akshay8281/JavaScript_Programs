@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Function</h1>
+    <script>
+
+     let a = 2
+     let b = 2
+     let c = 4
+     let d = 4
+
+
+      console.log(a + b - 1 + 5 * 8 / 2 - a + 5);
+      console.log(c + d - 1 + 5 * 8 / 2 - c + 5);
+
+      function test(){
+        return "hello"
+      }
+
+      function sum(x,y){
+        return x + y - 1 + 5 * 8 / 2 - x + 5
+      }
+
+      console.log(test());
+      console.log(sum(a,b));
+      console.log(sum(c,d));
+      console.log(sum(b,d));
+      console.log(sum(b,c));
+      console.log(sum(a,c));
+
+    </script>
+
+</body>
+
+</html>
