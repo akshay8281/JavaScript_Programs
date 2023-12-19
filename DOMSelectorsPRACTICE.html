@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="sec-1" id="sec-main">
+        <div>
+            <h1 class="header" id="headID">DOM Selectors</h1>
+            <p class="para" id="para-1" name="sec-1-para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, labore ex! Fuga rerum at nihil esse
+                quibusdam totam reprehenderit perspiciatis? Vel ipsam vero maiores quos necessitatibus qui ut, eligendi
+                non quae, porro quo, temporibus voluptatibus. Ipsam maiores, sapiente quos eaque odit, in, quaerat saepe
+                dolore totam quia ducimus labore sit?
+            </p>
+            <p class="para" id="para-2" name="sec-1-para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, labore ex! Fuga rerum at nihil esse
+                quibusdam totam reprehenderit perspiciatis? Vel ipsam vero maiores quos necessitatibus qui ut, eligendi
+                non quae, porro quo, temporibus voluptatibus. Ipsam maiores, sapiente quos eaque odit, in, quaerat saepe
+                dolore totam quia ducimus labore sit?
+            </p>
+            <p class="para" id="para-3" name="sec-1-para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, labore ex! Fuga rerum at nihil esse
+                quibusdam totam reprehenderit perspiciatis? Vel ipsam vero maiores quos necessitatibus qui ut, eligendi
+                non quae, porro quo, temporibus voluptatibus. Ipsam maiores, sapiente quos eaque odit, in, quaerat saepe
+                dolore totam quia ducimus labore sit?
+            </p>
+            <input type="text" class="input" id="sec-1-input">
+            <button class="btn" id="sec-1-btn" onclick="btnClick()">Button</button>
+        </div>
+    </section>
+
+    <script>
+        // let element = document
+        // console.log(element);
+
+        // ** Single Element Selecor **
+
+        // 1. getElementByID
+
+        // let element = document.getElementById("sec-main")
+        // element.style.backgroundColor = "darkorange"
+        // element.style.padding = "30px"
+        // element.style.color = "white"
+        // console.log(element);
+
+        // 2. querySelector
+
+        // >> Through ID using querySelector
+
+        // let qSelect = document.querySelector("#sec-main")
+        // qSelect.style.backgroundColor = "darkred"
+        // qSelect.style.padding = "30px"
+        // qSelect.style.color = "white"
+        // console.log(qSelect);
+
+        // >> Throught class using querySelector
+
+        // let qselectclass = document.querySelector(".sec-1")
+        // qselectclass.style.backgroundColor = "darkblue"
+        // qselectclass.style.padding = "30px"
+        // qselectclass.style.color = "white"
+        // console.log(qselectclass);
+
+
+        // ** Multiple Element Selecetor **
+
+        // let mClassName = document.getElementsByClassName("para")
+        // console.log(mClassName);
+
+        // let mTagName = document.getElementsByTagName("h1")
+        // console.log(mTagName);
+
+        // let mName = document.getElementsByName("sec-1-para")
+        // console.log(mName);
+
+        // console.log(mTagName, mName);
+
+        // let mQSelectAll = document.querySelectorAll(".para")
+        // console.log(mQSelectAll);
+
+
+        //////////   DOM Manupulation   //////////
+
+        // let element = document.getElementById("headID").innerHTML = "<h2>DOM Selectors</h2>"
+        // let element1 = document.querySelectorAll("p").innerHTML = "<h2>This getElementById</h2>"
+        // console.log(element1);
+
+        // let element = document.querySelector(".sec-1")
+
+        // function btnClick() {
+        //     // element.innerHTML = "<h5> This is ME</h5>"
+        //     element.style.color = "white"
+        //     element.style.backgroundColor = "red"
+        //     element.style.padding = "30px"
+        // }
+    </script>
+
+</body>
+
+</html>
