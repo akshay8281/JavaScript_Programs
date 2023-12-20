@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .secClass1 {
+            width: 100%;
+            height: 30vh;
+            background-color: red;
+        }
+
+        .secClass2 {
+            width: 100%;
+            height: 30vh;
+            background-color: green;
+        }
+
+        .secClass3 {
+            width: 100%;
+            height: 30vh;
+            background-color: orange;
+        }
+    </style>
+</head>
+
+<body id="body" class="bodyClass">
+    <div>
+        <button class="btn" id="btnID" onclick="nighthouse()">Night Mode</button>
+    </div>
+    <section class="secClass1 dark" id="sec1">
+        <div class="container">
+            <h1>This is Section 1</h1>
+        </div>
+    </section>
+    <section class="secClass2 dark" id="sec2">
+        <div class="contaoner">
+            <h1>This is Section 2</h1>
+        </div>
+    </section>
+    <section class="secClass3 dark" id="sec3">
+        <div class="contaoner">
+            <h1>This is Section 3</h1>
+        </div>
+    </section>
+
+<script>
+    var element = document .getElementsByClassName("bodyClass")
+    // var element1 = document .getElementsByClassName("dark")
+    var element1 = document .getElementsByClassName("dark")
+
+function nighthouse(){
+    element[0].style.backgroundColor = "blue"
+    element1[0].style.backgroundColor = "darkgreen"
+    console.log(element1);
+
+
+}
+
+
+
+
+</script>
+
+</body>
+
+</html>
