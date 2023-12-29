@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<!-- JSExVar.html -->
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript Example: Variables and functions prompt() and confirm()</title>
+</head>
+
+<body>
+    <div>
+        <h1>Welcome to JavaScript!</h1>
+    </div>
+    <script>
+        var username = prompt("Enter your name: ", "");
+        if (confirm("Your name is " + username)) {
+            document.write("<h3>Hello, " + username + "!</h3>");
+        } else {
+            document.write("<h1>Hello, world!</h1>");
+        }
+    </script>
+</body>
+
+</html>
