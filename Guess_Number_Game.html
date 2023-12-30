@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1>Guess Number Game</h1>
+        <h3>Using JavaScript</h3>
+    </div>
+
+    <script>
+        let ChosenNum = 8;
+        let UserInput = prompt("Guess the Number");
+
+        while (UserInput != ChosenNum) {
+            UserInput = prompt("You Entered Wrong Input, Please try Again...");
+        }
+
+        console.log("Congratulation you Guessed the Number");
+    </script>
+
+</body>
+</html>
