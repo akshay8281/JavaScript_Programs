@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <h1>Template Literal `` </h1>
+    </div>
+    <div>
+        <h1>String using Double Quote "" and Single Quotes ''</h1>
+    </div>
+
+    <script>
+        let student = {
+            name: "Akshay",
+            age: 26,
+            location: "Dholera"
+        }
+        // Types Sentences using Different Method
+
+        // Using Double Quotes
+
+        console.log("Your Name is " + student.name + " and i am " + student.age + " years old" + " and i am from " + student.location);
+
+        // Using Back Tick by Template Literal ``
+
+        console.log(`Your Name is ${student.name} and i am ${student.age} years old and i am from ${student.location}`);
+    </script>
+</body>
+
+</html>
