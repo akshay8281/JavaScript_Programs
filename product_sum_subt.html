@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div>
+        <h1>
+            Product of Number by User Input
+        </h1>
+    </div>
+
+    <script>
+        function sumProduct(num1, num2, num3, num4) {
+            product = num1 * num2 * num3 * num4;
+            return product;
+        }
+        function sumAdd(num1, num2, num3, num4) {
+            add = Number(num1) + Number(num2) + Number(num3) + Number(num4);
+            return add;
+        }
+        function sumSub(num1, num2, num3, num4) {
+            sub = num1 - num2 - num3 - num4;
+            return sub;
+        }
+
+        let a = prompt("Enter First Number")
+        let b = prompt("Enter Second Number")
+        let c = prompt("Enter Third Number")
+        let d = prompt("Enter Fourth Number")
+
+        resultAdd = sumAdd(a, b, c, d);
+        resultPro = sumProduct(a, b, c, d);
+        resultSub = sumSub(a, b, c, d);
+
+        console.log("The Sum of Four Numbers is : " + resultAdd);
+        console.log("The Product of Four Numbers is : " + resultPro);
+        console.log("The Sub of Four Numbers is : " + resultSub);
+    </script>
+
+</body>
+
+</html>
