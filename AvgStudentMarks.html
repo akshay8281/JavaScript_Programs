@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <h1>
+            <span>Qs - 2 :- </span> For a given Array with a Marks of Students -> [85,95,77,50,36,45,88,98]
+        </h1>
+        <h2>
+            Find the Average Marks of the entire class.
+        </h2>
+    </div>
+    <script>
+
+        let marks = [85, 95, 77, 50, 36, 45, 88, 98]
+        let sum = 0;
+        for (let val of marks) {
+            sum += val;
+        }
+        console.log(sum);
+
+        let avg = sum / marks.length;
+
+        console.log(`The Average of Students Marks are = ${avg}`);
+    </script>
+
+
+</body>
+
+</html>
