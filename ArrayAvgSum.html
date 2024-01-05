@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div>
+        <h1><span>Qs - 1 </span>For a given Array with price of 5 items -> [250,300,500,330,222]</h1>
+        <h2>All items have an offer of 10% OFF on them. Change the Array to store final price after applying offer.</h2>
+    </div>
+
+    <script>
+        let items = [250, 300, 500, 330, 222];
+        let i = 0;
+        for (let value of items) {
+            let offer = value / 10;
+            items[i] = items[i] - offer;
+            console.log(`The Value After Offer is ${items[i]}`);
+            i++;
+        }
+    </script>
+
+</body>
+
+</html>
