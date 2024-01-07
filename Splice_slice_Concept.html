@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <h1>
+            Add and Remove Variable from the Array
+        </h1>
+        <h2>
+            <span>Qs - 3 </span>Create an Array to store Companies = ["Bloomberg", "Microsoft","Uber", "IBM","Netflix"];
+        </h2>
+        <p>
+            a. Remove the First company from the Array.
+        </p>
+        <p>
+            b. Remove UBER and Add OLA in its Place
+        </p>
+        <p>
+            c. Add Amazon at the end
+        </p>
+        <p>
+            d. Add Starbucks at the Starting of Array
+        </p>
+    </div>
+
+    <script>
+        let company = ["Bloomberg", "Microsoft", "Uber", "IBM", "Netflix"];
+
+        console.log(company);
+
+        ////  a. Remove the First company from the Array.
+        company.shift(0);
+        console.log(company);
+
+        ////  b. Remove UBER and Add OLA in its Place
+        company.splice(1, 1, "OLA");
+        console.log(company);
+
+        //// c. Add Amazon at the end
+        company.push("Amazon")
+        console.log(company);
+
+        //// d. Add Starbucks at the Starting of Array
+        company.unshift("Starbucks");
+        console.log(company);
+
+    </script>
+
+</body>
+
+</html>
