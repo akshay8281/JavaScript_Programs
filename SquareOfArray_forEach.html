@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <h1>
+            Square of and Array using forEach method
+        </h1>
+    </div>
+
+    <script>
+
+        //// Using Normal Function
+        console.log("1. Using Normal Function");
+        const nums = [10, 20, 30, 40, 50, 60, 70, 80, 100];
+        nums.forEach(function (value, idx) {
+            // console.log(idx, value * value);
+            console.log(idx, value ** 2);  ////Another Way to square the Number using Double star **
+        })
+
+        //// 2. Using Arrow Function
+        console.log("2. Using Arrow Function");
+        const numArrow = [1, 2, 3, 4, 5, 6, 7, 8]
+        numArrow.forEach((number, idx) => {
+            // console.log(idx, number * number);
+            console.log(idx, number ** 2); ////Another Way to square the Number using Double star **
+        })
+
+        //// 3. Using Variable as an Function with Parameter
+
+        console.log("3. Using Variable as an Function with Parameter");
+        const digit = [5, 10, 15, 20, 30, 40, 50];
+        const varNum = (digit) => {
+            // console.log(digit * digit);
+            console.log(digit ** 2); ////Another Way to square the Number using Double star **
+        }
+        digit.forEach(varNum);
+
+    </script>
+
+
+</body>
+
+</html>
