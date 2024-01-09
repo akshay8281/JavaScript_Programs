@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <h1>
+            <span>Qs - 1 : </span>We are given array of marks of students. Filter our of the marks of students that
+            scored 90.
+        </h1>
+        <h1>
+            <span>Qs - 2 : </span>
+            <h1>Take a number n as an input from user. Create an Array from 1 to n.</h1>
+            <h3>
+                a. Use the reduce method to calculate sum of all numbers into the Array.
+            </h3>
+            <h3>
+                b. Use the reduce method to calculate Multiplication or Product of all numbers into the Array.
+            </h3>
+        </h1>
+    </div>
+
+    <script>
+        //// Qs - 1 Marks Greater than 90
+        console.log("Toppers Marks of Students by Filter Method");
+        const marks = [50, 45, 80, 90, 88, 99, 30, 96, 97]
+        let stu_marks = marks.filter((value) => {
+            return value > 90;
+        })
+        console.log(stu_marks);
+
+        ////  Qs - 2 Create and from user input
+        let n = prompt("Enter a number");
+        let arr = [];
+        for (i = 1; i <= n; i++) {
+            arr[i - 1] = i;
+        }
+        console.log(arr);
+
+        //// a. Sum of Input from the Array
+        let sum = arr.reduce((result, current) => {
+            return result + current;
+        })
+        console.log("The Sum of Array from User Inpur are = ", sum);
+
+        //// b. Product or Multiplications of Input from the Array
+        let product = arr.reduce((result, current) => {
+            return result * current;
+        })
+        console.log("The Product of Array from User Inpur are = ", product);
+    </script>
+</body>
+
+</html>
