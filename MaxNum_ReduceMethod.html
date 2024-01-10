@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <h1>
+            Create an Array and Find out max Number using Reduce Method.
+        </h1>
+    </div>
+
+    <script>
+        const elements = [10, 5, 6, 11, 20, 4, 7, 8, 10]
+
+        let newArray = elements.reduce((result, current) => {
+            return result > current ? result : current;
+        })
+
+        console.log(newArray);
+    </script>
+
+</body>
+
+</html>
