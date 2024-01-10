@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <h1>
+            Using Operators for Addition, Subtraction, Multiplication, Modulo and Division by Function With Parameter
+            and Without Parameter.
+        </h1>
+    </div>
+
+    <script>
+        // Using Normal Function with Return Value
+        console.log("Calculator using Function with Return Value");
+        function funcAdd(x, y) {
+            return x + y;
+        }
+        function funcSubt(x, y) {
+            return x - y;
+        }
+        function funcMulti(x, y) {
+            return x * y;
+        }
+        function funcDiv(x, y) {
+            return x / y;
+        }
+        function funcModulo(x, y) {
+            return x % y;
+        }
+        console.log(funcAdd(10, 5));
+        console.log(funcSubt(10, 5));
+        console.log(funcMulti(10, 5));
+        console.log(funcDiv(10, 5));
+        console.log(funcModulo(10, 5));
+
+        // Using Arrow Function
+        console.log("Calculator Using Arrow Functions");
+        ArrowAdd = (x, y) => {
+            return x + y;
+        }
+        ArrowSubt = (x, y) => {
+            return x - y;
+        }
+        ArrowMulti = (x, y) => {
+            return x * y;
+        }
+        ArrowDiv = (x, y) => {
+            return x / y;
+        }
+        ArrowModulo = (x, y) => {
+            return x % y;
+        }
+
+        console.log(ArrowAdd(20, 5));
+        console.log(ArrowSubt(20, 5));
+        console.log(ArrowMulti(20, 5));
+        console.log(ArrowDiv(20, 5));
+        console.log(ArrowModulo(20, 5));
+
+
+    </script>
+
+</body>
+
+</html>
