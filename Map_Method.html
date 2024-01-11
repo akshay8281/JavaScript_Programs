@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <h1>
+            Create an Array and square the same using MAP METHOD and also use ForEACH method.
+        </h1>
+    </div>
+
+    <script>
+        //// Create an Array and square using MAP METHOD
+        const arr = [10, 20, 30, 40, 50,]
+
+        arr.map(function (val) {
+            console.log(val * val);
+        })
+        //// In Map Method the old ARRAY does not change the value
+        console.log(arr);
+
+        ///// Using Arrow Function for Map Method
+
+        const arrowArray = [5, 10, 15, 20, 25, 30, 40, 50]
+
+        arrowArray.map((num) => {
+            console.log(num * num);
+        })
+
+        console.log(arrowArray);
+
+
+    </script>
+
+
+</body>
+
+</html>
