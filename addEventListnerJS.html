@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <h1>
+            Concept - addEventListener in JavaScript.
+        </h1>
+    </div>
+
+    <div class="task">
+        <button class="btn">Click Me!</button>
+    </div>
+
+    <script>
+        //// We can set multiple event hanlers using addEventListener
+        let clickMe = document.querySelector(".btn");
+        clickMe.addEventListener("click", () => {
+            console.log("Click Me through addEventListener - 1");
+        })
+        clickMe.addEventListener("click", () => {
+            console.log("Click Me through addEventListener - 2");
+        })
+        clickMe.addEventListener("click", () => {
+            console.log("Click Me through addEventListener - 3");
+        })
+        clickMe.addEventListener("click", () => {
+            console.log("Click Me through addEventListener - 4");
+        })
+
+        clickMe.removeEventListener("click", c)
+    </script>
+
+</body>
+
+</html>
