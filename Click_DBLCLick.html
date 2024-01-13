@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .task {
+            height: 150px;
+            width: 350px;
+            background-color: lightgreen;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>
+            CLick and Double CLick Event
+        </h1>
+    </div>
+    <!-- <div class="task" onmouseover="mouseHover()">
+        <button class="btn1" onclick="btn1()">CLick Me!</button>
+        <button class="btn2" ondblclick="dblBtn()">Double CLick Me!</button>
+    </div> -->
+    <div class="task">
+        <button class="btn1">CLick Me!</button>
+        <button class="btn2">Double CLick Me!</button>
+    </div>
+
+    <script>
+        // Access with JS by QuerySelector
+        let mouseHover = document.querySelector(".task");
+        mouseHover.onmouseover = () => {
+            console.log("You are inside a div by MouseHover Event!");
+        }
+
+        let btnClick = document.querySelector(".btn1");
+        btnClick.onclick = () => {
+            console.log("You CLick Me!");
+            for (i = 0; i <= 7; i++) {
+                console.log(i);
+            }
+        }
+
+        let dblClick = document.querySelector(".btn2");
+        dblClick.ondblclick = () => {
+            console.log("You Clicked Double, Right...?");
+        }
+
+
+        // Write as an Function
+        // function btn1() {
+        //     console.log("You Clicked Me!");
+        // }
+
+        // function dblBtn() {
+        //     console.log("You Double Clicked Button,Right....?");
+        // }
+        // function mouseHover() {
+        //     console.log("You are in Div,Its Hover Effect!");
+        // }
+    </script>
+
+</body>
+
+</html>
