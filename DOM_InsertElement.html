@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .divArea {
+            background-color: lightgreen;
+            color: black;
+            padding: 15px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="divArea">
+        <h1>DOM Manipulation</h1>
+        <ul>
+            <h2>Insert Element</h2>
+            <li>node.append (el) // adds at the END of the node {INSIDE}</li>
+            <li>node.prepend (el) // adds at the START of the node {INSIDE}</li>
+            <li>node.before (el) // adds before the node {OUTSIDE}</li>
+            <li>node.after (el) // adds after the node {OUTSIDE}</li>
+        </ul>
+
+        <ul>
+            <h2>Remove Element</h2>
+            <li>node.remove () // Remove the node</li>
+        </ul>
+
+        <p>
+            The End of Div
+        </p>
+
+    </div>
+
+    <script>
+        // let inAppend = document.querySelector("h1");
+        // inAppend.innerText = "DOM Manipulation by JavaScript";
+
+        // document.querySelector(".divArea").append(inAppend)
+        // document.querySelector(".divArea").prepend(inAppend)
+        // document.querySelector(".divArea").before(inAppend)
+        // document.querySelector(".divArea").after(inAppend)
+
+        //// Remove Elements
+        let removePara = document.querySelector("p");
+        removePara.remove();
+
+    </script>
+
+</body>
+
+</html>
