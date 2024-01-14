@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            box-sizing: border-box;
+            height: 200px;
+            width: 200px;
+            background-color: lightcoral;
+            color: white;
+            text-align: center;
+            margin-top: 20px;
+            font-size: 35px;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>
+            <span>Qs - 1 : </span> Create H2 heading element with text - "Hellp JavaSCript".Append "from Apna College
+            students" to this text
+            using JS.
+        </h1>
+        <h1>
+            <span>Qs - 2 : </span> Create 3 Divs with common class name - "box". Access them and add some unique text to
+            them.
+        </h1>
+    </div>
+    <br><br>
+
+    <!-- Qs - 1 -->
+    <div>
+        <h2>
+            Hello JavaSCript
+        </h2>
+    </div>
+
+    <!-- Qs - 2 -->
+    <div class="card">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+
+
+    <script>
+        //// Qs - 1
+        console.log("Qs - 1 : - Append two String");
+        let strAppend = document.querySelector("h2")
+        strAppend.innerText = strAppend.innerText + " from My College";
+        console.log(strAppend.innerText);
+
+
+
+        //// Qs - 2
+
+
+        //// 1st Way to Write a Code
+        // let uniText = document.querySelectorAll(".box")
+        // uniText[0].innerText = "Hello"
+        // uniText[1].innerText = "Mr."
+        // uniText[2].innerText = "Akshay"
+        // console.log(uniText);
+
+
+        //// 2nd Way to Write a Code
+
+        let uniText = document.querySelectorAll(".box")
+        let idx = 1;
+        for (let dynamic of uniText) {
+            dynamic.innerText = `Hello World ${idx}`;
+            console.log(dynamic.innerText);
+            idx++;
+        }
+
+    </script>
+
+</body>
+
+</html>
