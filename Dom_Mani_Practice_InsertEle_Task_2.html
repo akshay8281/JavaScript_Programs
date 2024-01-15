@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .para {
+            color: red;
+
+        }
+
+        .newClass {
+            background-color: lightblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="Question">
+        <h1>
+            Qs :- Create a "p" tag in html, given it a class and some styling. <br>
+            Now create a new class in CSS and try to append this class to the "p" element.
+        </h1>
+        <h1>
+            Did you notice, how you overwrite the class name when you add a new one ? <br>
+            Solve this problem using classList.
+        </h1>
+    </div>
+    <hr> <br>
+
+    <div>
+        <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure id iusto itaque? Et, minima,
+            earum blanditiis nam a cum iure doloribus eius illum sed totam ipsa possimus deserunt architecto odit?</p>
+    </div>
+
+
+    <script>
+        let classAppend = document.querySelector("p");
+        classAppend.getAttribute("class");
+        classAppend.classList.add("newClass")
+
+
+        //// The SetAttrubute override the class from old to new so change style of that element
+        // classAppend.setAttribute("class", "p-1")
+    </script>
+
+
+</body>
+
+</html>
