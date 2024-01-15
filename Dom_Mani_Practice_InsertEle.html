@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .Qs {
+            background-color: lightgreen;
+            padding: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="Qs">
+        <h1>
+            Create a new button Element. Give it text "Click Me !", backgound color "red" and text colo "white".
+        </h1>
+        <h2>
+            Insert the button as the first element inside the body tag.
+        </h2>
+    </div>
+
+    <script>
+        let newBtn = document.createElement("button");
+        newBtn.innerText = 'Click Me'
+
+        newBtn.style.backgroundColor = "red";
+        newBtn.style.color = "white";
+        newBtn.style.padding = "10px";
+        newBtn.style.fontSize = "18px";
+        document.querySelector("body").prepend(newBtn)
+
+
+        newBtn.onclick = () => {
+            document.querySelector("body").style.backgroundColor = "black";
+        }
+    </script>
+
+</body>
+
+</html>
