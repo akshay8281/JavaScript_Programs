@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <h1>
+            Introduction of ForEach Method in JavaSCript.
+        </h1>
+    </div>
+
+    <script>
+        //// ForEach Method using Normal Function
+        console.log("ForEach Method");
+        let nums = [1, 2, 3, 4, 5, 6, 7, 8]
+        nums.forEach(function (value) {
+            console.log(value);
+        })
+
+
+        //// ForEach Method using Arrow Function {Same as Above}
+        console.log("ForEach using Arrow Function");
+        const digit = [101, 102, 103, 104, 105, 106, 107, 108, 109]
+
+        digit.forEach((value) => {
+            console.log(value);
+        })
+
+
+        //// ForEach Method with Index Number using Normal Function
+
+        console.log("ForEach Method with Index Number");
+        const heroes = ["batman", "Ironman", "Superman", "Shaktiman", "Spiderman", "Hulk", "Thor"]
+        heroes.forEach(function (name, idx) {
+            console.log(idx, name.toUpperCase());
+        })
+
+        //// ForEach Method with Index Number using Arrow Function
+        console.log("ForEach Method with Index Number using Arrow Function");
+        const fruits = ["apple", "banana", "orange", "Strawberry", "Chiku"]
+
+        fruits.forEach((juice, idx, array) => {
+            console.log(idx, juice.toUpperCase(), array);
+        })
+
+
+    </script>
+</body>
+
+</html>
