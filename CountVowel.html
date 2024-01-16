@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <h1>
+            Counting Vowel into String by using Function
+        </h1>
+        <h2><span>Qs - 1 : </span> Create a function using a "FUNCTION" keyword that takes a String as an arguement and
+            returns the number of vowels in the strings.</h2>
+        <h2><span>Qs - 2 : </span> Create and Arrow Function to perform same task.</h2>
+    </div>
+
+    <script>
+
+        //// Using Normal Function
+        console.log("Normal Function");
+        function countVowel(str) {
+            let count = 0;
+            for (const char of str) {
+                if (char === "a" || char === "e" || char === "i" || char === "o" || char === "u") {
+                    count++;
+                }
+            }
+            return count;
+        }
+
+        console.log(countVowel("Hello World"));
+
+        //// Arrow Function to Perform Same Task
+
+        console.log("Task 2 : Arrow Function");
+        let VowelCounts = (sentence) => {
+            let count = 0;
+            for (const word of sentence) {
+                if (word === "a" || word === "e" || word === "i" || word === "o" || word === "u" || word === "A" || word === "E" || word === "I" || word === "O" || word === "U") {
+                    count++;
+                }
+            }
+            return count;
+        }
+        console.log(VowelCounts("Hello Bharat"));
+    </script>
+
+</body>
+
+</html>
