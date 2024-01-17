@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <h1>
+            Filter Method in JS
+        </h1>
+    </div>
+
+    <script>
+        //// Filter Method in JavaScript
+        console.log("Filter Method in JavaScript");
+        const elements = [10, 11, 12, 13, 14, 15, 16, 17, 18];
+        const array = elements.filter(function (value) {
+            return value % 2 === 0;
+        })
+        console.log(array);
+
+
+        //// Filter Method using Arrow Function in JavaScript
+        const newArray = [5, 10, 15, 20, 25, 30, 40, 50,]
+
+        ////Even Number
+        console.log("Filter Method using Arrow Function - Even Number");
+        const evenNum = newArray.filter((value) => {
+            return value % 2 === 0;
+        })
+
+        console.log(evenNum);
+        ////ODD Number
+        console.log("Filter Method using Arrow Function - ODD Number");
+        const oddNum = newArray.filter((value) => {
+            return value % 2 !== 0;
+        })
+
+        console.log(oddNum);
+
+
+
+    </script>
+</body>
+
+</html>
