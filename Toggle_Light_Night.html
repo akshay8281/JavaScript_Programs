@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        div {
+            text-align: center;
+        }
+
+        .mode {
+            padding: 5px 10px;
+            font-size: 15px;
+            color: darkblue;
+            background-color: bisque;
+            border-radius: 10px;
+            cursor: pointer;
+            font-weight: 900;
+            margin-top: 20px;
+        }
+
+        /* Second Method by ClassList */
+        .dark {
+            color: white;
+            background-color: black;
+        }
+
+        .light {
+            color: black;
+            background-color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>
+            Create a toggle button that changes the screen to dark mode when clicked and light mode when clicked again.
+        </h1>
+        <button class="mode">Mode Changer</button>
+    </div>
+
+    <script>
+        //// Method No. - 1
+        // let modeBtn = document.querySelector(".mode");
+        // let curMode = "light";
+
+        // modeBtn.addEventListener("click", () => {
+        //     if (curMode == "light") {
+        //         curMode = "dark";
+        //         document.querySelector("body").style.backgroundColor = "black";
+        //         document.querySelector("body").style.color = "white";
+        //     } else {
+        //         curMode = "light";
+        //         document.querySelector("body").style.backgroundColor = "white";
+        //         document.querySelector("body").style.color = "black";
+        //     }
+        //     console.log(curMode);
+        // })
+
+        // Method No. - 2
+        let modeBtn = document.querySelector(".mode");
+        let body = document.querySelector("body");
+        let curMode = "light";
+
+        modeBtn.addEventListener("click", () => {
+            if (curMode === "light") {
+                curMode = "dark";
+                body.classList.add("dark")
+                body.classList.remove("light")
+            } else {
+                curMode = "light";
+                body.classList.add("light")
+                body.classList.remove("dark")
+            }
+            console.log(curMode);
+        })
+
+    </script>
+</body>
+
+</html>
