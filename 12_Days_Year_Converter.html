@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <h3>Q.12 WAP to convert years into days and days into years?</h3>
+    </div>
+
+
+    <script>
+        // Function to convert Years to Days
+        function yearsToDays(years) {
+            // Assuming 1 Year = 365 Days
+            return years * 365;
+        }
+
+        // Function to convert Days to Years
+        function daysToYears(days) {
+            // Assuming 1 Year = 365 Days
+            return days / 365;
+        }
+
+        let yearsInput = prompt("Enter the number of years:");
+
+        // Check if the input is a valid number
+        if (!isNaN(yearsInput)) {
+            let daysResult = yearsToDays(yearsInput);
+            console.log(`${yearsInput} years is approximately ${daysResult} days`);
+
+            //// Day Inputs
+            let daysInput = prompt("Enter the number of days:");
+            // Check if the input is a valid number
+            if (!isNaN(daysInput)) {
+                let yearsResult = daysToYears(daysInput);
+                console.log(`${daysInput} days is approximately ${yearsResult} years`);
+            } else {
+                console.log("Please enter a valid number for days.");
+            }
+        } else {
+            console.log("Please enter a valid number for years.");
+        }
+
+    </script>
+</body>
+
+</html>
