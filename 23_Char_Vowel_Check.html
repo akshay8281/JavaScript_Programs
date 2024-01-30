@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <h3>
+            Q.23 Find the Character Is Vowel or Not ?
+        </h3>
+    </div>
+
+    <script>
+        function countVowels(string) {
+            let count = 0;
+            for (let checkStr of string) {
+                if (checkStr === "a" || checkStr === "e" || checkStr === "i" || checkStr === "o" || checkStr === "u") {
+                    count++;
+                } else if (checkStr === "A" || checkStr === "E" || checkStr === "I" || checkStr === "O" || checkStr === "U") {
+                    count++;
+                }
+            }
+            return count;
+        }
+        console.log(countVowels(prompt("Enter a String")));
+    </script>
+</body>
+
+</html>
