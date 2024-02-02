@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <h3>
+            Q.28 Write to find the largest of three numbers in JS?
+        </h3>
+    </div>
+
+    <script>
+        // Function to find the largest of three numbers
+        let LargeNum = (num1, num2, num3) => {
+            if (num1 > num2 && num1 > num3) {
+                return num1;
+            } else if (num2 > num1 && num2 > num3) {
+                return num2;
+            } else {
+                return num3;
+            }
+        }
+
+        // Get user input for three numbers
+        let userInput1 = prompt("Enter the First Number:");
+        let userInput2 = prompt("Enter the Second Number:");
+        let userInput3 = prompt("Enter the Third Number:");
+
+        if (!isNaN(userInput1) && !isNaN(userInput2) && !isNaN(userInput3)) {
+            var largestNumber = LargeNum(userInput1, userInput2, userInput3);
+            console.log("The largest number is: " + largestNumber);
+        } else {
+            console.log("Please enter valid numbers.");
+        }
+
+    </script>
+
+
+</body>
+
+</html>
