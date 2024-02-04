@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <h3>
+            Q.32 Write to print factorial of given number?
+        </h3>
+    </div>
+
+    <script>
+        function FactorialNum(num) {
+            let fact = 1;
+            for (let i = 2; i <= num; i++) {
+                fact = fact * i;
+            }
+            return fact;
+        }
+
+        console.log(FactorialNum(prompt()));
+
+    </script>
+</body>
+
+</html>
