@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <h3>
+            Q.35 Write a program make a summation of given number (E.g., 1523 Ans: - 11) in JS?
+        </h3>
+    </div>
+
+    <script>
+
+        function summation(num) {
+            // Let assume sum is 0
+            let sum = 0;
+
+            // Loop until the original number becomes 0
+            while (num !== 0) {
+                // Add the last digit to the sum
+                //// num % 10 gives 2 (the last digit of 12).
+                // sum + num % 10 adds 2 to the current value of sum.
+                // sum = sum + num % 10 updates sum to be 5.
+                sum = sum + num % 10;
+
+                // Remove the last digit from the original number
+                num = Math.floor(num / 10);
+            }
+
+            // Return the calculated sum
+            return sum;
+        }
+
+        // Prompt the user for input and display the result
+        let userInput = parseInt(prompt("Enter a Number"));
+        console.log("Sum of the digits is: " + summation(userInput));
+
+    </script>
+</body>
+
+</html>
