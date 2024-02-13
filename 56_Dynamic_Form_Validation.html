@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form id="myForm">
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+        <span id="emailError" class="error"></span>
+
+        <!-- Other form fields -->
+
+        <button type="submit">Submit</button>
+    </form>
+    <script>
+        document.getElementById('email').addEventListener('input', validateEmail);
+
+        function validateEmail() {
+            let emailInput = document.getElementById('email');
+            let emailError = document.getElementById('emailError');
+
+            // Example: Check if the email format is valid
+            let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            emailError.textContent = emailPattern.test(emailInput.value) ? '' : 'Invalid email format.';
+        }
+    </script>
+</body>
+
+</html>
