@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <h3>
+            Q.65 copy to one string to another string in JS?
+        </h3>
+    </div>
+
+    <script>
+        //// First Method
+        // let originalString = "Hello, World!";
+        //     let copiedString = originalString;
+
+        //     console.log("Original String:", originalString);
+        //     console.log("Copied String:", copiedString);
+
+        ///Second Method
+        // let originalString = "Hello, World!";
+        // let copiedString = "".concat(originalString);
+        //     console.log(originalString);
+        //     console.log(copiedString);
+
+        ////Third Method
+
+        let originalString = "Hello, World!";
+        let copiedString = originalString.slice();
+
+        console.log("Original String : ", originalString);
+        console.log("copiedString String : ", copiedString);
+
+    </script>
+</body>
+
+</html>
