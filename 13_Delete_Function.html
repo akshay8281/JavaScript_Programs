@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <h3>
+            13. What is the function of the delete operator?
+        </h3>
+    </div>
+
+    <script>
+        // Example One 
+
+        const obj = { key1: 'value1', key2: 'value2' };
+        console.log(obj);
+        delete obj.key1;
+        console.log(obj);
+        // Now, obj only has { key2: 'value2' }
+
+
+        // Example Two
+        const arr = [1, 2, 3];
+        console.log(arr);
+        delete arr[1];
+        console.log(arr);      // [1, <1 empty item>, 3]
+        console.log(arr.length); // 3
+
+
+    </script>
+</body>
+
+</html>
