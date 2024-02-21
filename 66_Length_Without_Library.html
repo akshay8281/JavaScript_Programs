@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <h3>
+            Q.66 Find the length of a string without using libraryFunction?
+        </h3>
+    </div>
+
+    <script>
+        function withoutLibraryLength(inputString) {
+            let length = 0;
+
+            // Iterate through each character in the string
+            for (let char of inputString) {
+                length++;
+            }
+
+            return length;
+        }
+
+        // Example usage:
+        // let str1 = "My Name is Akshay";
+        let str2 = prompt("Enter String to find Length");
+        let lengthOfMyString = withoutLibraryLength(str2);
+
+        console.log("Length of the string:", lengthOfMyString);
+    </script>
+</body>
+
+</html>
