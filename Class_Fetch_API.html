@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div id="list"></div>
+    </div>
+
+    <script>
+        //// Only one proprty in link
+        // const apiUrl = "https://jsonplaceholder.typicode.com/todos/1"
+
+        //// Multiple property in in below links
+        const apiUrl = "https://jsonplaceholder.typicode.com/todos/"
+        const listContainer = document.querySelector("#list")
+
+        fetch(apiUrl)
+            .then((response) => {
+                return response.json()
+            })
+            .then((response) => {
+                //// Output in Json Form
+                // console.log(response);
+
+                //// Output for json to console in single value
+                // console.log(`ID = ${response.id}`);
+                // console.log(`Title = ${response.title}`);
+                // console.log(`Completed = ${response.completed}`);
+
+                response.forEach(element => {
+                    const listElement = document.createElement("div")
+
+                    listElement.innerHTML = `
+                    <h2>ID = ${element.id}</h2>
+                    <p>Completed = ${element.completed}</p>
+                    <h1>Title = ${element.title}</h1>
+                    <hr>
+                    `
+                    listContainer.appendChild(listElement)
+                    // console.log(element.id, element.completed, element.title);
+                });
+            })
+            .catch((error) => {
+                console.log(`Error fetching the Data`, error);
+            })
+    </script>
+</body>
+
+</html>
