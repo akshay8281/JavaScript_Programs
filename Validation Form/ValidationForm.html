@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ValidForm.css">
+    <style>
+        .error {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form name="myForm" action=".php" method="post" onsubmit="regForm()">
+            <div class="card">
+                <div class="reg-header">
+                    <h1>Registration Form</h1>
+                </div>
+                <div class="form-input userName">
+                    <label for="Username">Username</label>
+                    <br>
+                    <input id="username" type="text" placeholder="Username" required>
+                    <span id="usernameError" class="error"></span>
+                </div>
+                <div class="form-input password">
+                    <label for="password">Password</label>
+                    <br>
+                    <input id="password" type="password" placeholder="Password" required>
+                    <span id="passwordError" class="error"></span>
+                </div>
+                <div class="form-input email">
+                    <label for="Email">Email</label>
+                    <br>
+                    <input id="email" type="email" placeholder="Email" required>
+                    <span id="emailError" class="error"></span>
+                </div>
+
+
+                <div class="form-input number">
+                    <label for="number">Number</label>
+                    <br>
+                    <input maxlength="10" id="mobileNumber" type="tel" placeholder="Mobile Number" required>
+                    <span id="numberError" class="error"></span>
+                </div>
+
+                <div>
+                    <button class="btn" onclick="btnClick()">Submit</button>
+                </div>
+            </div>
+        </form>
+
+    </div>
+
+    <script src="validationForm.js"></script>
+
+</body>
+
+</html>

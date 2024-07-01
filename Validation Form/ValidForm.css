@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Exo+2&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    margin-top: 80px;
+}
+
+.card {
+    margin: 0 auto;
+    width: 500px;
+    background-color: lightgoldenrodyellow;
+    padding: 30px 40px;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+.form-input {
+    margin: 20px 0px;
+}
+
+h1 {
+    color: brown;
+    margin-bottom: 50px;
+    font-family: 'Lobster Two', sans-serif;
+}
+
+label {
+    font-size: 22px;
+    font-family: 'Exo 2', sans-serif;
+}
+
+input {
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px 15px;
+    border-radius: 8px;
+    outline: none;
+    border: 1px solid grey;
+    font-size: 16px;
+}
+
+.btn {
+    padding: 8px 20px;
+    font-size: 20px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid grey;
+    color: white;
+    background-color: darkblue;
+    font-family: 'Exo 2', sans-serif;
+    transition: .4s ease-in-out;
+}
+
+.btn:hover {
+    background-color: darkgreen;
+    cursor: pointer;
+}
