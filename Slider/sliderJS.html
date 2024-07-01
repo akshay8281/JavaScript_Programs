@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="slider">
+        <div class="slider-img"><img src="../Slider/img - 1.jpg" alt=""></div>
+        <div class="slider-img"><img src="../Slider/img - 2.png" alt=""></div>
+        <div class="slider-img"><img src="../Slider/img - 1.jpg" alt=""></div>
+    </div>
+
+    <script>
+        let SliderJS = document.getElementsByClassName("slider-img");
+        console.log(SliderJS);
+
+        counter = 0;
+
+        function Slider() {
+
+            for (let index = 0; index < SliderJS.length; index++) {
+                SliderJS[index].style.display = "none"
+                console.log(SliderJS[index]);
+
+            }
+            SliderJS[index].style.display = "block"
+            console.log(counter);
+            counter++; z
+
+            setTimeout(Slider, 2000);
+        }
+
+    </script>
+</body>
+
+</html>
