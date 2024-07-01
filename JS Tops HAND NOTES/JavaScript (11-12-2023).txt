@@ -1,0 +1,48 @@
+JavaScript (11-12-2023)
+
+Data Types
+1. Primitive - 7
+2. Non Primitive - 2
+
+
+To Know Data Type of Variables
+typeof()
+
+* Primitive
+1. Number = 123
+2. Null = 0
+3. Bollean = True or False
+4. Bigint = 23n
+5. String = "Akshay"
+6. Symbol = - + * / -
+7. Undefined = 
+
+We cannot Reassign or declare in Primiative Data
+
+* Non Primitive
+
+We can Reassign or declare in Non Primiative Data
+
+1. Object
+=> To store all datas of Primitive
+=> Give Key and Value
+
+
+let regForm {
+username : "Akshay8281",
+userpassword : 123,
+userAge : 45,
+userMark : True
+
+}
+
+2. Array
+
+* In array Count start from 0 1 2 3 4
+* Withou Key Value Store
+* Array Provide Index and Length
+
+let data = [1, 2, true, "Akshay", null]
+
+
+

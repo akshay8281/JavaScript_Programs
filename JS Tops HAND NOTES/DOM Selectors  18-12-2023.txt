@@ -1,0 +1,62 @@
+18-12-2023
+
+*** DOM Selectors ***
+
+D = Document ==>  HTML
+
+O = Object  ==>  Multiple Elements (h1, section,    div...etc....)
+
+M = Model
+
+
+** What is DOM Selectors ?
+>> DOM selectors are tools in web development that help locate and interact with HTML elements using JavaScript. They allow you to target specific elements on a webpage by their tag, class, ID, or other attributes, facilitating dynamic and responsive interactions with the document structure.
+
+
+** Two types of selectors of DOM **
+
+1. Single Element Selectors
+2. Multiple Element Selectors
+
+** What is DOM Manupulation ?
+
+>> DOM manipulation refers to the process of changing the content, structure, or style of a webpage using JavaScript. Developers can dynamically update or modify elements, such as text, images, or attributes, to create interactive and responsive user experiences without requiring a full page reload.
+
+>> Dom Manupulation means using js style html tag or error etc using DOM selectors (getElementId or getelementsbyClass)
+
+
+** 1. Single Element Selectors **
+
+>> Single Element selectors are of two types :- 
+
+1. getElementById
+
+2. querySelector : - 
+
+>> In ID = (#) HASGH to be mentioned for ID in QuerySelector
+>> In CLASS = (.) DOT to be mentioned for CLASS in QuerySelector
+>> In ELEMENT = TAG name to be mentioned in Element in querySelectors.
+	
+
+** 2. Multiple Element Selectors **
+
+1. getElementByClassName
+2. getElementByTagName
+3. getElementByName
+4. querySelectorAll
+
+>> Does not provide Index number by using getElementByClassName and getElementByTagName in Multiple Element Selector. Both provides HTML COLLECTION.
+
+>> getElementByName provides Index number and shows Node List in Multiple Element Selector.And all data will be in ARRAY.
+
+
+* Difference between InnerHtml and InnerText
+>> InnerHtml changes the Text and also change the Element or Tag while in InnerText only changes the TEXT into Element.
+
+ 	
+
+
+
+
+
+

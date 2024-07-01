@@ -1,0 +1,110 @@
+(15-12-2023)
+*** Operators in Javascript ***
+
+1. Arithmetic Operators
+2. Assignment Operators
+3. Comparison Operators
+4. Logical Operators
+5. Ternary Operator
+
+** Arithmetic Operators in JavaScript **
+
+1. Addition (+)
+2. Subtraction (-)
+3. Multiplication (*)
+4. Division (/)
+5. Modulo (%)
+
+Increament Operator (++)
+Decreament Operator (--)
+
+
+** Assignment Operators **
+
+1. Assignment (=)
+2. Addition Assignment (+=)
+3. Subtraction Assignment (- =)
+4. Multiplication Assignment (*=)
+5. Division Assignment (/ =)
+6. Modules/Remainder Assignment (% =)
+
+
+** Comparison Operators **
+
+1. Equality (==)
+2. Strict equality (===)  // datatype would be same than shows true.
+3. Not Equal to (!=)
+4. Strict Not Equal to (!==)
+5. Greater than (>)
+6. Less than (<)
+7. Greater than or Equal to (> =)
+8. Less than or Equal to (<= )
+
+
+** Logical Operators **
+
+1. Logical AND (&&)
+2. Logical OR (||)
+3. Logical NOT (!) 
+
+
+** Ternary Operators **
+
+1. Ternary Operator(?):
+Example - 
+
+let PMarks = 40
+
+let result = (PMarks > 39) ? "Pass" : "Fail";
+console.log(result);
+
+*** BOM and DOM ***
+
+BOM - Browser Object Model
+DOM - Document Object Model
+
+
+** BOM **
+
+What is BOM ?
+>> BOM in JavaScript, or Browser Object Model, lets code interact with the web browser. It provides tools to control the window, access its dimensions, open new windows, and manage navigation. BOM allows developers to create dynamic, user-friendly web applications by manipulating the browser's behavior and appearance.
+
+>> Properties : 
+
+Inner Width
+Inner Height
+Outer Width
+Outer Height
+
+>> innerHeight and innerWidth:
+
+These properties represent the interior dimensions of the browser window, excluding things like the browser's toolbar, address bar, and scrollbar.
+For example, if you want to know the height and width of the visible area of the browser window (excluding browser chrome), you would use innerHeight and innerWidth.
+
+Example : 
+console.log(window.innerHeight); // Height of the browser window's content area
+console.log(window.innerWidth);  // Width of the browser window's content area
+
+>> outerHeight and outerWidth:
+
+These properties represent the outer dimensions of the browser window, including the browser's toolbar, address bar, and scrollbar.
+If you want to know the total height and width of the entire browser window (including chrome), you would use outerHeight and outerWidth.
+
+Example : 
+console.log(window.outerHeight); // Total height of the browser window
+console.log(window.outerWidth);  // Total width of the browser window
+
+alert("Hello world")
+confirm("Are you sure you want to Login this pafe or Leave")
+prompt("Please Enter your Number...")
+console.log();
+
+
+** DOM **
+
+What is DOM ?
+>> DOM, or Document Object Model, is how JavaScript interacts with web pages. It's a programming interface that treats HTML and XML documents as tree structures. Developers use DOM to manipulate webpage content, structure, and style dynamically, enabling the creation of responsive and interactive websites.
+
+
+
+
