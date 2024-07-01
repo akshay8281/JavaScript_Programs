@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //// 1st Example - 
+        // class Hyundai {
+        //     start() {
+        //         console.log("Start the Production of Hyundai Car");
+        //     }
+
+        //     stop() {
+        //         console.log("End of the Production of Hyundai Car");
+        //     }
+        // }
+
+        // let i20 = new Hyundai();
+        // let kia = new Hyundai();
+
+        // console.log(i20.start());
+        // console.log(i20.stop());
+        // console.log(kia.start());
+        // console.log(kia.stop());
+
+
+        // 2nd Example - 
+        class Hyundai {
+            start() {
+                console.log("Start the Production of Hyundai Car");
+            }
+            stop() {
+                console.log("End of the Production of Hyundai Car");
+            }
+            setBrand(brand) {
+                this.brand = brand
+            }
+        }
+
+        let creeta = new Hyundai();
+        creeta.setBrand("Hyundai")
+        console.log(creeta);
+
+    </script>
+</body>
+
+</html>

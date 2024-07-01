@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <h2>
+            Qs - 2 : Create a new class called Admin which inherit from User.Add a new method called editData to Admin
+            that allows it
+            to edit website data.
+        </h2>
+    </div>
+
+    <script>
+        let DATA = "Header Data of User"
+        console.log(DATA);
+
+        class User {
+            constructor(name, email) {
+                this.name = name;
+                this.email = email;
+            }
+            viewData() {
+                console.log("Data = ", DATA);
+            }
+        }
+
+        let student1 = new User("Akshay", "akshay@gmail.com");
+        console.log(student1);
+
+        let student2 = new User("Javal", "javal@gmail.com");
+        console.log(student2);
+
+        let student3 = new User("Vidhi", "vidhi@gmail.com");
+        console.log(student3);
+
+        class Admin extends User {
+            constructor(name, email) {
+                super(name, email);
+            }
+            editData() {
+                DATA = "This is new DATA of User";
+            }
+        }
+
+        let Admin1 = new Admin("Krisha", "Krisha@gmail.com")
+        console.log(Admin1);
+
+        // Edited Data Shown in Admin1
+        console.log(Admin1.editData());
+        console.log(DATA);
+    </script>
+</body>
+
+</html>

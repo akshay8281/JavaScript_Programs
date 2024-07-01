@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        //// Example - 1
+        // class Parent {
+        //     hello() {
+        //         console.log("Hello");
+        //     }
+        // }
+        // class Child extends Parent {
+        //     world() {
+        //         console.log("World");
+        //     }
+        // }
+        // let obj = new Child();
+        // console.log(obj);
+
+        //// Example - 2
+
+        // class Person {
+        //     eat() {
+        //         console.log("You have to eat");
+        //     }
+        //     sleep() {
+        //         console.log("Sleep tonight");
+        //     }
+        // }
+
+        // class Marketing extends Person {
+        //     work() {
+        //         console.log("Work is Important");
+        //     }
+        // }
+
+        // let Akshay = new Marketing();
+        // console.log(Akshay);
+
+        ///// Example - 3
+        // class Person {
+        //     eat() {
+        //         console.log("You have to eat");
+        //     }
+        //     sleep() {
+        //         console.log("Sleep tonight");
+        //     }
+        // }
+
+        // class Marketing extends Person {
+        //     work() {
+        //         console.log("Work is Important");
+        //     }
+        // }
+
+        // let Akshay = new Marketing();
+        // console.log(Akshay.eat());
+        // console.log(Akshay.sleep());
+        // console.log(Akshay.work());
+
+
+        ///// Example - 4 = Method Overriding Method
+
+        class Subject {
+            constructor(){
+                console.log("HSSC Subject");
+            }
+            physics() {
+                console.log("Subject - Physics");
+            }
+            chemistry() {
+                console.log("Subject - chemistry");
+            }
+            maths() {
+                console.log("Subject - maths");
+            }
+            geology() {
+                console.log("Subject - geology");
+            }
+        }
+
+        class Teacher extends Subject {
+            work() {
+                console.log("Teaching is my responsibility");
+            }
+        }
+
+        let clg = new Teacher();
+        console.log(clg.chemistry());
+        console.log(clg.work());
+
+    </script>
+</body>
+
+</html>

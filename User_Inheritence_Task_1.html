@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <h2>
+            Qs - 1 : You are creating a website for your college. Create a class User with 2 properties, name and Email.
+            It also
+            has
+            a method called viewData() that allows user to view website data.
+        </h2>
+    </div>
+
+    <script>
+        class User {
+            constructor(name, email) {
+                this.name = name;
+                this.email = email;
+            }
+            viewData() {
+                console.log("Data = ", DATA);
+            }
+        }
+
+        let student1 = new User("Akshay", "akshay@gmail.com");
+        console.log(student1);
+
+        let student2 = new User("Javal", "javal@gmail.com");
+        console.log(student2);
+
+        let student3 = new User("Vidhi", "vidhi@gmail.com");
+        console.log(student3);
+
+    </script>
+</body>
+
+</html>

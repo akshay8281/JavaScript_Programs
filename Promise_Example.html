@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let getPromises = (res) => {
+            new Promise((resolve, reject) => {
+                console.log("I am Promise");
+                resolve("Done Successfully");
+            });
+        }
+
+        let myPromise = getPromises();
+        myPromise.then((res) => {
+            console.log("Promise Fullfilled",res);
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <h4>
+            Super Keyword use to access the value of PARENT from the CHILD.
+        </h4>
+    </div>
+    <script>
+        class Person {
+            constructor(name) {
+                this.wish = "Hello world";
+                this.name = name;
+            }
+
+            eat() {
+                console.log("Eat Food - BreakFast, Lunch and Dinner");
+            }
+
+            sleep() {
+                console.log("After working..., Have to sleep...")
+            }
+        }
+
+        class Marketing extends Person {
+            constructor(branch, name) {
+                super();
+                this.name = name;
+                this.brach = branch
+            }
+            work() {
+                console.log("Work Something, Build Something...");
+            }
+        }
+
+        let obj = new Marketing("Section - C", "Akshay Pitroda");
+        console.log(obj);
+    </script>
+</body>
+
+</html>

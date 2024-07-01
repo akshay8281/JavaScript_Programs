@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .content {
+            margin-top: 30px;
+            line-height: 28px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height .2s;
+        }
+    </style>
+</head>
+
+<body>
+    <button class="trigger">Read Info</button>
+
+    <div class="content">
+        <p class="text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea nostrum velit fuga sequi officia porro ducimus
+            debitis. Iure ullam quidem quos possimus temporibus iusto similique libero corrupti saepe, sit quo soluta
+            vitae animi ipsum, eius praesentium autem! Exercitationem maxime fuga, facilis magnam, eos repudiandae
+            dolorum, blanditiis placeat veniam totam dolore rem odio nostrum commodi quidem inventore illum? Ipsa harum
+            sapiente ex. Facere sapiente ad error, modi excepturi quod tenetur voluptatibus! Molestias modi hic, amet
+            eum accusantium laborum minus itaque voluptas delectus qui perspiciatis provident ullam. Quia quae obcaecati
+            quos? Laborum rerum tempore itaque saepe doloribus impedit totam optio enim, doloremque dolor perspiciatis
+            accusantium! Error ipsum eum nemo quod molestiae excepturi quaerat consequuntur quidem sint delectus nam
+            possimus quisquam, iure, sunt reiciendis officia. Doloribus quisquam, odio culpa id numquam unde amet nulla
+            provident consequatur ipsam temporibus recusandae adipisci eveniet nam nobis eos reiciendis deleniti quae
+            ad, delectus illo modi ea. Sunt, quis asperiores, minima ea, magni distinctio deleniti dignissimos saepe
+            similique maiores placeat. Reprehenderit esse placeat mollitia quaerat tempore ducimus reiciendis ut
+            excepturi similique amet recusandae obcaecati ipsam quibusdam possimus consequatur cum rem atque, ullam enim
+            aperiam nam eaque adipisci molestias officia! Quos repellendus aliquid, omnis repellat vero non fugit magni
+            ullam saepe tenetur laboriosam rerum nesciunt doloribus labore optio illo illum fugiat consequuntur
+            architecto officia odio ratione. In quod, optio fugiat, doloremque voluptates quam id, veritatis officia
+            veniam sunt aliquam! Dolor fugiat accusamus, atque fuga tempora voluptates at illum fugit totam voluptas
+            libero quam. Repellat beatae mollitia blanditiis illo fuga distinctio consectetur. Totam praesentium quasi,
+            quaerat quam velit dolore, quod accusantium nisi tempora quia provident reprehenderit quas, dolorem
+            molestias deserunt nihil laudantium maxime fugit consequatur? Modi corporis eos nisi sequi cumque
+            exercitationem expedita quaerat molestiae fugiat earum facilis error, dignissimos eligendi, commodi deserunt
+            perferendis! Voluptate aliquam modi, reprehenderit dicta facere eveniet vero ipsa doloremque dolor enim
+            natus atque at esse delectus eos! Tempore, cupiditate numquam reiciendis, ratione suscipit at expedita sed
+            voluptas magnam repudiandae, minima est et provident molestiae. Veritatis deleniti aliquid, animi magnam
+            sapiente sunt nemo accusantium quaerat quae. Facere praesentium itaque ducimus iure repudiandae, obcaecati
+            harum ipsa, atque impedit nisi amet magni quae, vitae dolorum quaerat voluptatem voluptas aliquam
+            repellendus facilis ab quam doloremque aspernatur quis? Quisquam nihil in corrupti possimus neque adipisci
+            provident pariatur minima, magnam rerum nesciunt mollitia iusto nostrum animi dolorum expedita numquam
+            laborum! Cupiditate voluptatibus id dolores exercitationem nostrum quidem dignissimos nobis ipsam eveniet
+            explicabo blanditiis alias quis delectus rerum, consectetur quibusdam odit suscipit natus modi assumenda
+            laborum esse! Quibusdam mollitia aliquid quos odio reprehenderit? Quod ullam vel atque debitis accusamus
+            alias optio cupiditate quidem voluptatibus, reiciendis tenetur corporis velit, dolor soluta voluptatum
+            consequatur inventore architecto natus commodi. Quaerat consequuntur adipisci numquam facilis eos nobis
+            accusantium exercitationem, laudantium earum ratione tempore magnam ex accusamus suscipit. Quisquam dicta
+            velit atque nam voluptas voluptatem possimus autem commodi nemo suscipit illum, ipsa praesentium beatae,
+            quae ullam soluta nihil tenetur, nesciunt maiores eos. Ut totam qui harum atque obcaecati illo voluptatem,
+            vitae accusamus ad. Inventore, mollitia magni! Architecto!
+        </p>
+    </div>
+
+    <script>
+        let trigger = document.querySelector(".trigger");
+        let content = document.querySelector(".content");
+
+        trigger.onclick = function () {
+            if (content.style.maxHeight == 0) {
+                content.style.maxHeight = content.scrollHeight + "px";
+            }
+
+            else {
+                content.removeAttribute("style");
+            }
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const employee = {
+            calTax() {
+                console.log("The Tax rate will be 25%");
+            },
+        };
+        const akshay = {
+            salary: 58000,
+        }
+        akshay.__proto__ = employee;
+
+        console.log(akshay.calTax());
+    </script>
+</body>
+
+</html>
