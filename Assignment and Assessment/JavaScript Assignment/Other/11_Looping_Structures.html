@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <h3>
+            11. What are all the looping structures in JavaScript?
+        </h3>
+    </div>
+
+    <div>
+        <span>Ans - </span>
+        <p>In JavaScript, there are several looping structures that allow you to repeatedly execute a block of code. The
+            primary
+            looping structures are:</p>
+
+        <ol>
+            <li>for Loop:
+                <ul>
+                    <li>Used when the number of iterations is known.</li>
+                    <li>
+                        <p>Syntax</p>for (initialization; condition; iteration) {
+                        // code to be executed
+                        }
+                    </li>
+                </ul>
+            </li>
+            <li>while Loop:
+                <ul>
+                    <li>Used when the number of iterations is not known in advance, and the loop continues as long as a
+                        specified condition is
+                        true.</li>
+                    <li>
+                        <p>Syntax</p>
+                        while (condition) {
+                        // code to be executed
+                        }
+
+                    </li>
+                </ul>
+            </li>
+            <li>do-while Loop:
+                <ul>
+                    <li>Similar to the while loop, but the condition is checked after the loop body is executed,
+                        ensuring the code inside the
+                        loop runs at least once.</li>
+                    <li>do {
+                        // code to be executed
+                        } while (condition);
+                    </li>
+                </ul>
+            </li>
+            <li>for...in Loop:
+                <ul>
+                    <li>Used to iterate over the enumerable properties of an object.</li>
+                    <li>
+                        <p>Syntax</p>
+                        for (variable in object) {
+                        // code to be executed
+                        }
+                    </li>
+                </ul>
+            </li>
+            <li>for...of Loop:
+                <ul>
+                    <li>Introduced in ECMAScript 2015 (ES6), it iterates over the values of an iterable object like
+                        arrays or strings.</li>
+                    <li>
+                        <p>Syntax</p>
+                        for (variable of iterable) {
+                        // code to be executed
+                        }
+                    </li>
+                </ul>
+            </li>
+        </ol>
+        <p>Choose the loop that best fits the requirements of your specific task. Each loop has its use cases and is
+            suited for
+            different scenarios.</p>
+    </div>
+
+    <script>
+        // For Loop Example
+        console.log("For Loop");
+        for (let i = 0; i < 5; i++) {
+            console.log(i);
+        }
+
+        // While Loop Example
+
+        console.log("While Loop");
+        let j = 0;
+        while (j < 5) {
+            console.log(j);
+            j++;
+        }
+
+        // // Do while Example
+        console.log("Do While Loop");
+        let k = 0;
+        do {
+            console.log(k);
+            k++;
+        } while (k < 5);
+
+        // //For in Loop Example
+        console.log("For in Loop");
+
+        const person = { name: 'John', age: 30 };
+
+        for (let key in person) {
+            console.log(key, person[key]);
+        }
+
+        // // For of Loop Example
+        console.log("For of Loop");
+        const colors = ['red', 'green', 'blue'];
+
+        for (let color of colors) {
+            console.log(color);
+        }
+
+
+
+    </script>
+</body>
+
+</html>

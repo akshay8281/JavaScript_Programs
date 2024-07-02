@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex {
+            display: flex;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .col50 {
+            margin-block: 10px;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        input {
+            padding: 10px 15px;
+            width: 45%;
+            border-radius: 8px;
+            outline: none;
+            font-size: 20px;
+            margin-block: 10px;
+        }
+
+        .main {
+            width: 45%;
+            margin: 0 auto;
+            border: 3px solid black;
+            padding: 20px;
+        }
+
+        label {
+            font-size: 25px;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            font-size: 35px;
+            margin: 15px 15px 15px 0px;
+        }
+
+        .opt-btns {
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .opt-btns-left {
+            margin-top: 20px;
+            width: 40%;
+        }
+
+        .opt-btns-right {
+            text-align: center;
+            margin: 0 auto;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div>
+        <h2>
+            19. Create basic math operation in JS
+        </h2>
+    </div>
+
+    <div class="container">
+        <div class="main">
+            <div>
+                <h1>Math Operations</h1>
+            </div>
+
+            <div class="input-tab">
+                <div class="col50 flex">
+                    <label for="firstNum">Enter 1st Number : </label>
+                    <input type="text" id="firstNum">
+                </div>
+                <div class="col50 flex">
+                    <label for="secondNum">Enter 2nd Number : </label>
+                    <input type="text" id="secondNum">
+                </div>
+            </div>
+
+            <div class="opt-btns flex">
+                <div class="opt-btns-left">
+                    <button class="btn" onclick="performOperation('+')">+</button>
+                    <button class="btn" onclick="performOperation('-')">-</button>
+                    <button class="btn" onclick="performOperation('*')">*</button>
+                    <button class="btn" onclick="performOperation('/')">/</button>
+                    <button class="btn" onclick="performOperation('%')">%</button>
+                </div>
+
+                <div class="opt-btns-right">
+                    <h2>Answer is : <span id="result"></span></h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function performOperation(operation) {
+            let firstNum = parseFloat(document.querySelector("#firstNum").value);
+            let secondNum = parseFloat(document.querySelector("#secondNum").value);
+
+            if (isNaN(firstNum) || isNaN(secondNum)) {
+                alert("Please enter a valid")
+                return;
+            }
+
+            let result;
+
+            switch (operation) {
+                case '+':
+                    result = firstNum + secondNum;
+                    break;
+                case '-':
+                    result = firstNum - secondNum;
+                    break;
+                case '*':
+                    result = firstNum * secondNum;
+                    break;
+                case '/':
+                    result = firstNum / secondNum;
+                    break;
+                case '%':
+                    result = firstNum % secondNum;
+                    break;
+
+                default:
+                    alert('Invalid operator');
+                    break;
+            }
+
+            document.querySelector("#result").innerHTML = result;
+            document.querySelector("#result").style.color = "blue"
+
+        }
+    </script>
+</body>
+
+</html>

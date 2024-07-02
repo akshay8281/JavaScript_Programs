@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <h3>
+            Q.50 What is the drawback of declaring methods directly in JavaScript objects?
+        </h3>
+    </div>
+
+    <div>
+        <span>Ans - </span>
+        <ul>
+            <li>Code Duplication: Each object instance contains its own copy of methods, leading to redundant code and
+                increased memory
+                usage.</li>
+            <li>Limited Dynamic Updates: Modifying methods dynamically at runtime is challenging when declared directly
+                in objects,
+                limiting adaptability to changing requirements.</li>
+            <li>Testing Challenges: Tightly coupled methods make it difficult to isolate and test them independently,
+                impacting the
+                effectiveness of unit testing.</li>
+            <li>Namespace Pollution: Increased risk of naming conflicts when different objects share method names,
+                leading to unintended
+                interactions and bugs.</li>
+            <li>Difficulty in Maintenance: Updating or modifying methods requires changes to be applied to each object
+                instance, making
+                code maintenance more complex.</li>
+        </ul>
+        <p>
+            To address these issues, alternative patterns like constructor functions, prototypes, or ES6 classes are
+            often
+            recommended for better code organization, reusability, and maintainability.
+        </p>
+    </div>
+
+</body>
+
+</html>

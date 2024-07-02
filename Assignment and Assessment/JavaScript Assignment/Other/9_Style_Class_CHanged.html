@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Define some initial styles in the head or in a separate CSS file */
+        .blue-text {
+            color: blue;
+        }
+
+        .large-font {
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h3>
+            9. How can the style/class of an element be changed?
+        </h3>
+    </div>
+
+    <!-- <div id="myName">My Name is Akshay</div> -->
+    <div id="myPlace" class="blue-text large-font">i am from Dholera which in Ahmedabad District.</div>
+
+
+    <script>
+        // // JavaScript code to change inline styles
+        // const myName = document.getElementById("myName");
+
+        // // Change color
+        // myName.style.color = "yellow";
+        // // Change background color
+        // myName.style.backgroundColor = "black";
+        // // Change Padding
+        // myName.style.padding = "10px";
+
+        // // Change font size
+        // myName.style.fontSize = "25px";
+
+
+        // JavaScript code to change classes
+        const myElement = document.getElementById("myElement");
+
+        // Remove existing classes
+        myElement.classList.remove("blue-text", "large-font");
+
+        // Add new classes
+        myElement.classList.add("red-text", "bigger-font");
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: lightslategray;
+            text-align: center;
+        }
+
+        .label {
+            color: brown;
+            font-size: 18px;
+            font-weight: 900;
+            cursor: pointer;
+        }
+
+        .password {
+            margin: 20px 00px 0 20px;
+            padding: 5px 15px;
+            font-size: 18px;
+            border-radius: 10px;
+            border: none;
+            outline: none;
+        }
+
+        #toggleBtn {
+            margin-left: 20px;
+            cursor: pointer;
+            color: blue;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h3 class="qs">
+            18. Create password field with show hide functionalities
+        </h3>
+    </div>
+
+    <div>
+        <div class="container">
+            <label class="label" for="password">Password </label>
+            <input class="password" type="password" name="password" required>
+            <span id="toggleBtn" onclick="togglePassword()">Show</span>
+        </div>
+    </div>
+
+    <script>
+        function togglePassword() {
+            const passwordField = document.querySelector('.password');
+            const toggleBtn = document.getElementById('toggleBtn');
+            if (passwordField.type === 'password') {
+                passwordField.type = 'text';
+                toggleBtn.textContent = 'Hide';
+            } else {
+                passwordField.type = 'password';
+                toggleBtn.textContent = 'Show';
+            }
+        }
+    </script>
+</body>
+
+</html>

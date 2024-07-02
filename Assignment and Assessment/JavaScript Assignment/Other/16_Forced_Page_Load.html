@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <h3>
+            16. How can a page be forced to load another page in JavaScript?
+        </h3>
+    </div>
+    <div>
+        <span>Ans - </span>
+        <p>
+            In JavaScript, you can use the window.location object to force a page to load another page by changing the
+            URL. Here are
+            two common ways to achieve this:
+        </p>
+        <ol>
+            <li>Setting window.location.href:</li>
+            <p>This method changes the entire URL, triggering a page load.</p>
+            <p>window.location.href = 'https://www.example.com/newpage.html';
+            </p>
+            <li>Using window.location.replace():</li>
+            <p>This method replaces the current page with a new one in the browser's history</p>
+            <p>window.location.replace('https://www.example.com/newpage.html');
+            </p>
+        </ol>
+        <p>Choose between them based on whether you want the user to be able to navigate back to the original page or
+            not. The
+            replace() method is often preferred when you want to prevent the user from going back to the previous page.
+        </p>
+    </div>
+
+    <script>
+        // Example
+        document.getElementById('myButton').addEventListener('click', function () {
+            // Choose either method based on your requirements
+            window.location.href = 'https://www.example.com/newpage.html';
+            // or
+            // window.location.replace('https://www.example.com/newpage.html');
+        });
+
+    </script>
+</body>
+
+</html>

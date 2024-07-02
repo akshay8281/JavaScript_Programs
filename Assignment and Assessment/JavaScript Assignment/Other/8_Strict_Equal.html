@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <h3>
+            7. What is === operator?
+        </h3>
+    </div>
+
+    <div>
+        <span>Ans - </span>
+        <p>The === operator in JavaScript is the strict equality operator. It is used to compare two values for equality
+            without
+            performing any type coercion. In other words, both the value and the type of the operands must be the same
+            for the ===
+            operator to return true. If either the value or the type is different, the operator returns false.</p>
+        <p>Here are some key points about the === operator:</p>
+        <ul>
+            <li>Strict Equality: It checks both value and type, ensuring that both are identical.</li>
+            <li>5 === "5"; // Returns false (number is not equal to string) <br>
+                5 === 5; // Returns true (number is equal to number)
+            </li>
+            <li>Type Coercion: Unlike the loose equality operator ==, which performs type coercion (attempts to convert
+                operands to the
+                same type before making the comparison), === does not perform any type conversion. This helps avoid
+                unexpected and
+                potentially error-prone behavior.</li>
+            <li>Usage: It is commonly used when precise equality checking is required, and type information is crucial.
+            </li>
+            <li>Recommended Practice: In many cases, using === is preferred over == because it avoids unintended type
+                conversions,
+                leading to more predictable and less error-prone code.</li>
+        </ul>
+        <p>Example illustrating the difference between == and ===:</p>
+        <h5>"5" == 5; // Returns true (loose equality, type coercion is performed) <br>
+            "5" === 5; // Returns false (strict equality, different types)
+        </h5>
+        <p>In summary, the === operator is a strict equality operator that checks both the value and the type of
+            operands, making
+            it a useful tool for precise and reliable equality comparisons in JavaScript.</p>
+    </div>
+</body>
+
+</html>

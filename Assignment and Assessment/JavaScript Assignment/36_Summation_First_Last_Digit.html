@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <h3>
+            Q.36 Write a program you have to make a summation of first and last Digit. (E.g., 1234 Ans: - 5) in JS?
+        </h3>
+    </div>
+
+    <script>
+        // Example
+        // Suppose n is initially 4567. The loop will execute as follows:
+        // Iteration 1: n becomes 456.7
+        // Iteration 2: n becomes 45.67
+        // Iteration 3: n becomes 4.567
+        // Iteration 4: n becomes 0.4567
+        // Now, n is less than 10, and firstDigit is assigned the value of n, which is 4. So, the first digit of the original number 4567 is 4.
+
+        let firstLastSummation = () => {
+            let sum = 0;
+            let firstDigit;
+            let lastDigit;
+            lastDigit = userNum % 10;
+            //Find the first digit by dividing n by 10 until n greater then 10
+            while (userNum >= 10) {
+                userNum = Math.floor(userNum / 10);
+            }
+            // Result of First Digit from user Input
+            firstDigit = userNum;
+            //Calculate sum of first and last digit
+            sum = firstDigit + lastDigit;
+            return sum
+        }
+        let userNum = parseInt(prompt("Enter a Number"));
+        console.log(firstLastSummation(userNum));
+
+    </script>
+</body>
+
+</html>

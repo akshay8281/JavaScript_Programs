@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <h3>
+            Q.20 What is the difference between && and || in JavaScript?
+        </h3>
+    </div>
+
+    <div>
+        <span>Ans - </span>
+        <p>|| means “or”. It evaluates to true if the expression on either side is truthy.
+            && means “and”. It evaluates to false if the expression on either side is falsy.</p>
+        <p>If the expression on the left of && is falsy, it will immediately return false without checking the
+            expression on the
+            right. If the expression on the left of || is truthy, it will immediately return true without checking the
+            expression on
+            the right. (This is called “short circuiting”.)</p>
+        <p>If I understand the question correctly, then what you are looking for is the ! (“not”) operator.</p>
+        <p>a || b means “either a or b is truthy”.</p>
+        <p>!(a || b) means “both a and b are falsy”. It could also be written as !a && !b.</p>
+        <p>a && b means “both a and b are truthy”.</p>
+        <p>!(a && b) means “either a or b is falsy”. It could also be written as !a || !b.</p>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <h3>
+            Q.39 Accept 3 numbers from user using while loop and check each numbers palindrome?
+        </h3>
+    </div>
+
+    <script>
+
+
+        function isPalindrome(str) {
+            let rev = str.split("").reverse().join("");
+
+            if (rev == str) {
+                return true
+            }
+            return false
+
+        }
+
+        let str1 = "akshay";
+        let str2 = "pitroda";
+        let str3 = "What the Hell";
+
+        console.log(isPalindrome(str1));
+        console.log(isPalindrome(str2));
+        console.log(isPalindrome(str3));
+    </script>
+</body>
+
+</html>

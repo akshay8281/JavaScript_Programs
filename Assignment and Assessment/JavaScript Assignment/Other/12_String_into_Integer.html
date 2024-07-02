@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <h3>
+            12. How can you convert the string of any base to an integer in JavaScript?
+        </h3>
+    </div>
+
+    <div>
+        <span>Ans - </span>
+        <p>
+            In JavaScript, use parseInt(string, radix) to convert a string from any base to an integer. The string is
+            the input
+            string, and radix is an integer between 2 and 36, representing the base (e.g., 2 for binary, 8 for octal, 16
+            for
+            hexadecimal). For instance, to convert a binary string "101010" to an integer, use parseInt("101010", 2),
+            resulting in
+            42. Similarly, adjust the radix for octal or hexadecimal strings. If no radix is specified, the default is
+            10. For
+            non-integer strings or floating-point numbers, consider using parseFloat instead of parseInt.
+        </p>
+    </div>
+
+    <script>
+        function convertStoI() {
+            let a = "100";
+            console.log("Type of a before conversion: " + typeof a);
+            console.log("Type of a after conversion: " + typeof parseInt(a));
+        }
+        convertStoI();
+
+    </script>
+</body>
+
+</html>

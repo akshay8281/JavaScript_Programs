@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <h3>
+            Q.18 What is a Loop and Switch Case in JavaScript define that ?
+        </h3>
+    </div>
+
+    <div>
+        <span>Ans - </span>
+        <P>A loop is a control flow structure in programming that allows a set of instructions to be repeatedly executed
+            until a
+            certain condition is met. JavaScript provides several types of loops, including `for`, `while`, and
+            `do-while`.</P>
+        <P>`for` loop:** Executes a block of code a specified number of times. It has three parts: initialization,
+            condition,
+            and increment/decrement.</P>
+        <H5>
+            for (let i = 0; i < 5; i++) <br>
+                { // Code to be repeated }
+        </H5>
+
+        <p>`while` loop:** Repeats a block of code as long as a
+            specified condition is true.</p>
+
+        <h5>
+            let i=0; <br>
+            while (i < 5) { <br>
+                // Code to be repeated i++; }
+        </h5>
+        <p>
+            `do-while` loop: Similar to `while` loop, but it guarantees that the code block is executed at least once
+            before checking the condition.
+        </p>
+        <h5>
+            let i=0;<br>
+            do { <br>
+            // Code to be repeated i++; } while (i < 5); </h5>
+
+                <h4>Switch Case in JavaScript:</h4>
+                <p>
+                    A switch statement is used to perform different actions based on different conditions. It evaluates
+                    an expression against multiple possible case values and executes the code associated with the first
+                    matching case.
+                </p>
+                <h5>
+                    let day=3; <br>
+                    switch (day) { <br>
+                    case 1: console.log("Monday"); <br>
+                    break;<br>
+                    case 2: console.log("Tuesday"); <br>
+                    break; <br>
+                    // ... other cases default: console.log("Invalid day"); }
+                </h5>
+                <p>In this example, if `day` is `3`, it will execute the
+                    code block associated with `case 3`. The `break` statement is crucial to prevent fall-through,
+                    meaning execution would continue into the next case without it. The `default` case is optional and
+                    is executed when none of the cases match.</p>
+    </div>
+</body>
+
+</html>

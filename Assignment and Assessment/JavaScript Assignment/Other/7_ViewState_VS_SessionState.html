@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <h3>
+            7. What is the difference between ViewState and SessionState?
+        </h3>
+    </div>
+
+    <div>
+        <span>Ans - </span>
+        <p>ViewState and SessionState are concepts in the context of web development, particularly in ASP.NET. Here are
+            the key
+            differences between ViewState and SessionState in bullet points:</p>
+        <ul>
+            <h5>ViewState:</h5>
+            <li>ViewState is used to store the state of a page's controls.</li>
+            <li>It is used to persist page-specific information across postbacks.</li>
+            <li>Data is stored on the client side as hidden fields in the page.</li>
+            <li>ViewState is maintained on a per-page basis.</li>
+            <li>It is suitable for storing small amounts of data specific to a page</li>
+            <li>ViewState is part of the page's HTML and is transferred between the client and the server with each
+                request/response.</li>
+        </ul>
+        <ul>
+            <h5>SessionState:</h5>
+            <li>SessionState is used to store user-specific information across multiple pages.</li>
+            <li>It allows data to be stored on the server and associated with a user's session.</li>
+            <li>Data is stored on the server side, typically in-process or in an external session state provider (like a
+                database or a
+                separate server).</li>
+            <li>SessionState is maintained on a per-user basis, allowing data to persist across different pages for a
+                specific user.</li>
+            <li>It is suitable for storing larger amounts of data that need to be shared across pages during a user's
+                session.</li>
+            <li>SessionState requires more server resources compared to ViewState, especially if the session state is
+                stored
+                out-of-process.</li>
+        </ul>
+        <p>In summary, ViewState is used to maintain the state of controls on a single page across postbacks, while
+            SessionState is
+            used to store user-specific data that needs to persist across multiple pages during a user's session on a
+            website.</p>
+    </div>
+</body>
+
+</html>

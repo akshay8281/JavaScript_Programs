@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <h3>
+            5. What are undeclared and undefined variables?
+        </h3>
+    </div>
+
+    <div>
+        <span>Ans - </span>
+        <p>Undeclared and undefined variables are related concepts in JavaScript, but they refer to different
+            situations:</p>
+        <ol>
+            <li>Undeclared Variables:
+                <ul>
+                    <li>An undeclared variable is a variable that has been used in the code without being declared using
+                        the var, let, or const
+                        keywords.</li>
+                    <li>Using an undeclared variable can lead to unexpected behavior and is generally considered a
+                        mistake.</li>
+                    <li>In strict mode ("use strict";), attempting to use an undeclared variable will result in a
+                        ReferenceError.</li>
+                    <p>// Undeclared variable <br>
+                        x = 10; <br>
+                        console.log(x); // This will work, but it's not recommended.
+                    </p>
+                </ul>
+            </li>
+            <li>Undefined Variables:
+                <ul>
+                    <li>An undefined variable is a variable that has been declared but has not been assigned a value.
+                    </li>
+                    <li>In JavaScript, when you declare a variable without assigning a value to it, it is automatically
+                        assigned the value
+                        undefined.</li>
+                    <li>It's important to note that undefined is a special value in JavaScript that represents the
+                        absence of a value or an
+                        uninitialized variable.</li>
+                </ul>
+                <p>// Undefined variable <br>
+                    let y; <br>
+                    console.log(y); // Output: undefined
+                </p>
+                <p>let z = undefined; <br>
+                    console.log(z); // Output: undefined
+                </p>
+            </li>
+        </ol>
+        <p>In summary, an undeclared variable is one that has not been declared using var, let, or const, while an
+            undefined
+            variable is one that has been declared but has not been assigned a value (or explicitly assigned the value
+            undefined).
+            It's generally good practice to declare variables before using them to avoid potential issues and make the
+            code more
+            readable.</p>
+    </div>
+</body>
+
+</html>

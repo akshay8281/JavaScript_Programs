@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <h3>
+            2. What is the use of isNaN function?
+        </h3>
+    </div>
+
+    <div>
+        <span>Ans - </span>
+        <p>The isNaN function in JavaScript is used to determine whether a value is NaN (Not-a-Number) or not. NaN is a
+            special
+            value in JavaScript that represents the result of an operation that could not produce a meaningful numeric
+            result. It is
+            often returned when attempting to convert a non-numeric string to a number or when performing operations
+            that result in
+            undefined or unrepresentable values.</p>
+    </div>
+    <p>The isNaN function takes a single argument and returns true if the argument is NaN, and false otherwise. Here's
+        an
+        example:</p>
+    <h5>
+        let value1 = 42; <br>
+        let value2 = "Hello"; <br>
+
+        console.log(isNaN(value1)); // Output: false, as 42 is a valid number <br>
+        console.log(isNaN(value2)); // Output: true, as "Hello" cannot be converted to a number
+
+    </h5>
+    <p>In the example, isNaN(value1) returns false because value1 is a valid number. However, isNaN(value2) returns true
+        because attempting to convert the string "Hello" to a number results in NaN.</p>
+    <p>It's important to note that isNaN attempts to convert the argument to a number before checking if it is NaN. If
+        the
+        argument is not a number or a string that can be converted to a number, isNaN returns true. To check for a NaN
+        value
+        without automatic type conversion, you can use the Number.isNaN method introduced in ECMAScript 2015 (ES6):</p>
+    <h5>
+        console.log(Number.isNaN(value1)); // Output: false <br>
+        console.log(Number.isNaN(value2)); // Output: false
+    </h5>
+    <p>In this case, Number.isNaN returns false for both values because it doesn't perform type coercion. It only
+        returns true
+        if the provided value is exactly NaN.</p>
+    <script>
+
+    </script>
+</body>
+
+</html>

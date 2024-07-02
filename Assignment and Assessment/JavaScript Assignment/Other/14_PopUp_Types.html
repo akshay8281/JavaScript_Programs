@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <h3>
+            14. What are all the types of Pop up boxes available in JavaScript?
+        </h3>
+    </div>
+
+    <div>
+        <span>Ans - </span>
+        <p>In JavaScript, there are three main types of pop-up boxes that you can use for user interactions:</p>
+        <ol>
+            <li>alert() Box:
+                <ul>
+                    <li>Displays a simple message to the user with an OK button.</li>
+                    <li>
+                        <p>Syntax</p>
+                        alert('This is an alert box!');
+
+                    </li>
+                </ul>
+            </li>
+            <li>confirm() Box:
+                <ul>
+                    <li>Prompts the user with a message and provides OK and Cancel buttons.</li>
+                    <li>Returns true if the user clicks OK and false if the user clicks Cancel.</li>
+                    <li>
+                        <p>Syntax</p>
+                        const result = confirm('Do you want to proceed?');
+                    </li>
+                </ul>
+            </li>
+            <li>prompt() Box:
+                <ul>
+                    <li>Prompts the user to enter some input. It also provides OK and Cancel buttons.</li>
+                    <li>Returns the entered text if the user clicks OK and null if the user clicks Cancel.</li>
+                    <li>
+                        <p>Syntax</p>
+                        const userInput = prompt('Please enter your name:', 'John Doe');
+                    </li>
+                </ul>
+            </li>
+        </ol>
+        <p>These pop-up boxes are simple ways to interact with users, but they can be disruptive, so use them
+            judiciously in user
+            interfaces. Modern web development often uses more sophisticated modal dialogs or custom UI components for
+            better user
+            experiences.</p>
+    </div>
+
+    <script>
+        // Alert Box
+        alert('This is an alert box!');
+
+        // Confirm Box
+        const proceed = confirm('Do you want to proceed?');
+        if (proceed) {
+            console.log('User clicked OK.');
+        } else {
+            console.log('User clicked Cancel.');
+        }
+
+        // Prompt Box
+        const userName = prompt('Please enter your name:', 'John Doe');
+        if (userName !== null) {
+            console.log('Hello, ' + userName + '!');
+        } else {
+            console.log('User clicked Cancel.');
+        }
+
+    </script>
+</body>
+
+</html>

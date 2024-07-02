@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <h3>
+            10. How to read and write a file using JavaScript?
+        </h3>
+    </div>
+
+    <div>
+        <span>Ans - </span>
+        <h4>Read File using JavaSCript</h4>
+        <p>Sure, here's a simple explanation and code to read a file using JavaScript in a web browser:</p>
+        <ol>
+            <h5>Explanation in plain English:</h5>
+            <li>The HTML file has an input element where users can choose a file (input type="file" id="fileInput">).
+            </li>
+            <li>The JavaScript file (script.js) listens for a change event on the file input.</li>
+            <li>When a file is selected, a FileReader is used to read the contents of the file as text (readAsText
+                method).</li>
+            <li>Once the file is read, the onload event is triggered, and the content of the file is logged to the
+                console.</li>
+        </ol>
+        <p>In simple words: "When you select a file, JavaScript reads its content and shows it in the console."</p>
+        <input type="file" id="fileInput">
+    </div>
+
+    <div>
+        <h4>Read File using JavaSCript</h4>
+        <p>
+            Writing a file using JavaScript in a web browser has some limitations due to security reasons. However, one
+            common
+            approach is to generate a file and provide it for the user to download. Here's a simple example:
+        </p>
+        <h5>
+            Explanation
+        </h5>
+        <ol>
+            <li>The HTML file has a button (button id="downloadButton">Download File</button>).</li>
+            <li>The JavaScript file (script.js) listens for a click event on the button.</li>
+            <li>When the button is clicked, a Blob is created with the content you want to write (in this case, the text
+                "Hello, this is
+                the content to write to the file.").</li>
+            <li>A dynamically created anchor (<a>) element is used to provide a download link for the Blob.</li>
+            <li>The click() method is called on the anchor element to trigger the download.</li>
+        </ol>
+        <p>In simple words: "When you click the button, JavaScript creates a file with some content and gives it to you
+            for
+            download."</p>
+        <button id="downloadButton">Download File</button>
+    </div>
+    <script>
+        //// Read File using jS
+        document.getElementById('fileInput').addEventListener('change', (event) => {
+            const file = event.target.files[0];
+
+            if (file) {
+                const reader = new FileReader();
+
+                reader.onload = function (e) {
+                    const content = e.target.result;
+                    console.log('File content:', content);
+                };
+
+                reader.readAsText(file);
+            }
+        });
+
+
+        //// Write File using jS
+        const contentToWrite = 'Hello, this is the content to write to the file.';
+
+        document.getElementById('downloadButton').addEventListener('click', () => {
+            const blob = new Blob([contentToWrite], { type: 'text/plain' });
+
+            const a = document.createElement('a');
+            a.href = URL.createObjectURL(blob);
+            a.download = 'example.txt';
+            a.click();
+        });
+
+
+    </script>
+</body>
+
+</html>

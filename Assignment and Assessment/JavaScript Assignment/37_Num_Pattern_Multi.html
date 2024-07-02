@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <h3>
+            Q.37 Use console.log() and escape characters to print the following pattern in JS?
+        </h3>
+        <p>1 1 1 1 1 <br>
+            2 1 2 4 8 <br>
+            3 1 3 9 27 <br>
+            4 1 4 16 64 <br>
+            5 1 5 25 125</p>
+    </div>
+
+    <script>
+        function generatePattern(rows) {
+            for (let i = 1; i <= rows; i++) {
+                let square = i * i;
+                let simple = i;
+                let colSimple = 1;
+                let cube = i * i * i;
+                // let fourthPower = i * i * i * i;
+
+                // console.log(`${i} ${square} ${cube} ${fourthPower}`);
+                console.log(`${i} ${colSimple} ${simple} ${square} ${cube}`);
+            }
+        }
+
+        // Set the number of rows you want in the pattern
+        const numberOfRows = 5;
+
+        // Generate and display the pattern
+        generatePattern(numberOfRows);
+
+    </script>
+</body>
+
+</html>

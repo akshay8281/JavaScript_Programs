@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <h3>
+            Q. 45 Write a JavaScript program to determine if a variable is array?
+        </h3>
+    </div>
+
+    <script>
+        function checkArray() {
+            let str = 'This is a string';
+            let num = 25;
+            let arr = [10, 20, 30, 40];
+
+            let result = Array.isArray(str);
+            console.log("Output for String: " + result);
+
+            result = Array.isArray(num);
+            console.log("Output for Number: " + result);
+
+            result = Array.isArray(arr);
+            console.log("Output for Array: " + result);
+        }
+
+        checkArray();
+
+    </script>
+</body>
+
+</html>

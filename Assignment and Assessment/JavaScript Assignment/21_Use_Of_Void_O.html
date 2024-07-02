@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <h3>
+            Q.21 What is the use of Void (0)?
+        </h3>
+    </div>
+    <div>
+        <span>Ans - </span>
+        <p>In JavaScript, `void(0)` is often used in the context of using the `void` operator. The `void` operator
+            evaluates an
+            expression but then returns `undefined`. It's commonly used in situations where a script or a link's `href`
+            attribute
+            needs to be set to a JavaScript snippet that should not affect the current page or cause a navigation.</p>
+        <h6>Here's an example:</h6>
+        <h6>
+            <!-- <a href="javascript:void(0);" onclick="myFunction();">Click me</a> -->
+        </h6>
+        <p>In this example, clicking the link triggers the `myFunction` JavaScript function, but the `void(0)`
+            expression is used
+            in the `href` attribute to ensure that the link doesn't cause the page to navigate or change its state. It's
+            a way to
+            create a non-interactive link that still allows for JavaScript to be executed when the link is clicked.</p>
+        <p>It's worth noting that in modern JavaScript and web development practices, the use of `void(0)` is somewhat
+            outdated.
+            Developers may use other techniques like event listeners or simply using `#` in the `href` attribute for
+            similar
+            purposes. Additionally, with the advent of more sophisticated frameworks and practices, inline JavaScript in
+            attributes
+            is often avoided in favor of unobtrusive event handling.</p>
+
+    </div>
+</body>
+
+</html>

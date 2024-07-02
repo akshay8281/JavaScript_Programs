@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <h3>Q.4 Write a mul Function Which will Work Properly When invoked With Following Syntax</h3>
+        <p>The MUL function is a miniature of the multiplication function. In this function, we call the function that
+            required an
+            argument as a first number, and that function calls another function that required another argument and this
+            step goes
+            on.</p>
+        <p>The first function’s argument is x, the second function`s argument is y and the third is z, so the return
+            value will be
+            xyz.</p>
+    </div>
+
+    <script>
+        // Syntex: - 
+        function mul(x) {
+            return function (y) {
+                return function (z) {
+                    return x * y * z;
+                };
+            };
+        }
+
+    </script>
+
+</body>
+
+</html>

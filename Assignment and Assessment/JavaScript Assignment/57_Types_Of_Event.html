@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <h3>
+            Q.57 how many type of JS Event? How to use it?
+        </h3>
+    </div>
+
+    <div>
+        <span>Ans - </span>
+        <p>JavaScript events are actions or occurrences that happen in the browser, and they can be handled by
+            JavaScript code.
+            There are various types of events in JavaScript, broadly categorized into:</p>
+        <p>Mouse Events:
+
+        <ol>
+            <li>Mouse Events:
+                <ul>
+                    <li>click: Occurs when a mouse button is clicked.</li>
+                    <li>mouseover/mouseout: Triggered when the mouse pointer enters/exits an element.</li>
+                    <li>mousedown/mouseup: Fired when a mouse button is pressed/released.</li>
+                </ul>
+            </li>
+
+            <li>Keyboard Events:
+                <ul>
+                    <li>keydown/keyup: Fired when a key is pressed/released.</li>
+                </ul>
+            </li>
+            <li>Form Events:
+                <ul>
+                    <li>submit: Triggered when a form is submitted.</li>
+                    <li>input: Fired when the value of an input element changes.</li>
+                </ul>
+            </li>
+            <li>Document and Window Events:
+                <ul>
+                    <li>load: Fired when a page has finished loading.</li>
+                    <li>unload: Occurs when the user navigates away from a page.</li>
+                    <li>resize: Triggered when the browser window is resized.</li>
+                    <li>scroll: Fired when an element's scrollbar is scrolled.</li>
+                </ul>
+            </li>
+            <li>Focus Events:
+                <ul>
+                    <li>focus/blur: Fired when an element gains/loses focus.</li>
+                </ul>
+            </li>
+
+            <li>Event Delegation:
+                <ul>
+                    <li>Utilizes event propagation to handle events on parent elements rather than individual child
+                        elements</li>
+                </ul>
+            </li>
+        </ol>
+    </div>
+
+    <script>
+        // 1. Inline HTML Event Handling:
+        // Add event attributes directly in HTML tags.
+        <button onclick="myFunction()">Click me</button>
+
+        // 2. Traditional Event Handling:
+        // Use the addEventListener method to attach event handlers in JavaScript.
+        document.getElementById('myButton').addEventListener('click', function () {
+            // Your code here
+        });
+
+        // 3.ES6 Arrow Functions:
+        // Use arrow functions for concise event handlers.
+        document.getElementById('myButton').addEventListener('click', () => {
+            // Your code here
+        });
+
+        // 4. Event Object:
+        // Event handlers receive an event object, providing information about the event.
+        document.getElementById('myInput').addEventListener('input', function (event) {
+            console.log(event.target.value);
+        });
+
+        // 5.Preventing Default Actions:
+        // Use event.preventDefault() to stop the default behavior of an event.
+        document.getElementById('myForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+            // Your form handling code here
+        });
+
+    </script>
+</body>
+
+</html>

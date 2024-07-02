@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <h3>
+            17. What are the disadvantages of using innerHTML in JavaScript?
+        </h3>
+    </div>
+
+    <div>
+        <span>Ans - </span>
+        <p>Using innerHTML in JavaScript for manipulating HTML content has some drawbacks:</p>
+
+        <ol>
+            <li>Security Risks:</li>
+            <p>Assigning user-generated or untrusted content to innerHTML can lead to security vulnerabilities, such as
+                Cross-Site
+                Scripting (XSS) attacks. If the content is not properly sanitized, malicious scripts may be executed.
+            </p>
+            <li>Performance Overhead:</li>
+            <p>Manipulating innerHTML can be less efficient than other DOM manipulation methods, especially when dealing
+                with large
+                documents. It involves parsing and serializing the HTML content, leading to potential performance
+                bottlenecks.</p>
+            <li>Overwrites Event Handlers:</li>
+            <p>When you set innerHTML, existing event handlers on elements are often lost. If you have attached event
+                listeners to
+                elements, using innerHTML might unintentionally remove those listeners.</p>
+            <li>Limited Error Handling:</li>
+            <p>innerHTML does not provide detailed error handling. If the HTML content you're trying to inject is
+                malformed, it might
+                lead to unexpected results without clear error messages.</p>
+            <li>Limited Control:</li>
+            <p>Using innerHTML replaces the entire content within an element. If you only need to modify a small part of
+                the content or
+                if you want more control over insertion points, other DOM manipulation methods like appendChild or
+                insertAdjacentHTML
+                might be more suitable.</p>
+        </ol>
+        <p>To address these issues, consider using alternative methods like DOM manipulation, template literals, or
+            dedicated
+            libraries/frameworks that offer better security and performance while mitigating the risks associated with
+            innerHTML.</p>
+    </div>
+</body>
+
+</html>

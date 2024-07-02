@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex {
+            display: flex;
+        }
+
+        h3 {
+            text-align: center;
+        }
+
+        .sbj-tab {
+            margin-block: 10px;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        label {
+            font-size: 20px;
+        }
+
+        ol li {
+            font-size: 20px;
+        }
+
+        .sub-input {
+            padding: 10px;
+            width: 50%;
+            font-size: 20px;
+            border-radius: 10px;
+            outline: none;
+        }
+
+        .main {
+            width: 45%;
+            margin: 0 auto;
+            border: 3px solid black;
+            padding: 10px 20px;
+        }
+
+        .total {
+            justify-content: space-between;
+        }
+
+        .result-btn {
+            margin-top: 15px;
+            text-align: center;
+            padding: 10px 35px;
+            font-size: 20px;
+            border-radius: 10px;
+            border: none;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div>
+        <h2>
+            20. Create result.
+        </h2>
+    </div>
+    <div class="container">
+        <div class="main">
+            <div>
+                <h2>
+                    Markssheet for Information Technology
+                </h2>
+            </div>
+            <div>
+                <h3>Enter Marks</h3>
+            </div>
+            <div class="input-tabs">
+                <ol>
+                    <li>
+                        <div class="sbj-tab flex">
+                            <label for="subject">C Language : </label>
+                            <input class="sub-input" type="text">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="sbj-tab flex">
+                            <label for="subject">C++ Language : </label>
+                            <input class="sub-input" type="text">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="sbj-tab flex">
+                            <label for="subject">Database : </label>
+                            <input class="sub-input" type="text">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="sbj-tab flex">
+                            <label for="subject">HTML : </label>
+                            <input class="sub-input" type="text">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="sbj-tab flex">
+                            <label for="subject">CSS : </label>
+                            <input class="sub-input" type="text">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="sbj-tab flex">
+                            <label for="subject">Php : </label>
+                            <input class="sub-input" type="text">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="sbj-tab flex">
+                            <label for="subject">Core Java : </label>
+                            <input class="sub-input" type="text">
+                        </div>
+                    </li>
+                </ol>
+            </div>
+            <div>
+                <div class="result-btn">
+                    <button class="result-btn">Result</button>
+                </div>
+            </div>
+            <div class="total flex">
+                <div class="total-left">
+                    <h3>Total is : <span id="total-marks"></span> /350 </h3>
+                </div>
+                <div class="total-right">
+                    <h3>Percentage is : <span id="percentage"></span></h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Get all input elements
+            const inputSubMarks = document.querySelectorAll(".sub-input");
+            // Get the Result Button
+            const resultBtn = document.querySelector(".result-btn");
+            // Event Listener for Button Click
+            resultBtn.addEventListener("click", function () {
+                // Calculate Total Marks
+                let totalMarks = 0;
+                inputSubMarks.forEach(function (input) {
+                    const marks = parseFloat(input.value) || 0;
+                    totalMarks += marks;
+                });
+                // Calculate Total Subject
+                const totalSubject = inputSubMarks.length;
+                // Maximum Marks of Subject Finder
+                const maxMarks = totalSubject * 50;
+                // Calculate Percentage of Student Marks
+                const percentage = (totalMarks / maxMarks) * 100;
+                // Display Result
+                document.querySelector("#total-marks").textContent = totalMarks;
+                document.querySelector("#percentage").textContent = percentage.toFixed(2) + "%";
+            });
+        });
+    </script>
+</body>
+
+</html>
