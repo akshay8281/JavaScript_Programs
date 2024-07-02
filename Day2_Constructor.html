@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        //// Method 1 write code
+        // class Human {
+        //     name = ""
+        //     weight = 0
+        //     height = 0
+        //     constructor(a, b, c) {
+        //         this.name = a
+        //         this.weight = b
+        //         this.height = c
+        //     }
+        // }
+
+        // let obj = new Human("Javal", 53, 5.9)
+        // console.log(obj);
+
+        //// Method 2 write code
+        class Human {
+            name = ""
+            age = 0;
+            gender = ""
+            city = ""
+            phone = 0
+            constructor(data) {
+                this.name = data.a
+                this.age = data.b
+                this.gender = data.c
+                this.city = data.d
+                this.phone = data.e
+            }
+            walk() {
+                console.log(`${this.name} is walking`);
+            }
+
+            showColor() {
+                console.log("Black");
+            }
+        }
+
+        let akshay = new Human({ a: "Akshay", b: 26, c: "Male", d: "Dholera", e: 9988776655 })
+        console.log(akshay);
+        console.log(akshay.walk());
+        console.log(akshay.showColor());
+
+        let krisha = new Human({ a: "Krisha", b: 10, c: "Female", d: "Ahmedabad", e: 123456798 });
+        console.log(krisha);
+        console.log(krisha.walk());
+        console.log(krisha.showColor());
+
+    </script>
+</body>
+
+</html>

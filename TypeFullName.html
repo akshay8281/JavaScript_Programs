@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        // class human {
+        //     name = ""
+        //     height = 0;
+        //     weight = 0;
+        //     bmi = 0
+        // walk = () => {
+        //     console.log("i am walking")
+        // }
+        // calculatebmi = () => {
+        //     this.bmi = this.weight / (this.height * this.height)
+        //     console.log(this.bmi)
+        // }
+
+
+        //     constructor(p1, p2, p3) {
+        //         this.name = p1
+        //         this.height = p2
+        //         this.weight = p3
+        //     }
+        // }
+
+
+        // const pritesh = new human()
+        // pritesh.name = "pritesh"
+        // pritesh.height = 6.5
+        // pritesh.weight = 70
+        // pritesh.bmi = pritesh.weight / (pritesh.height * pritesh.height)
+
+        // console.log(`details of pritesh ${pritesh.name} ${pritesh.height} ${pritesh.weight} ${pritesh.bmi}`)
+
+        // pritesh.walk()
+        // pritesh.calculatebmi()
+        // const pritesh = new human("pritesh", 20, 30)
+        // console.log(`details of pritesh ${pritesh.name} ${pritesh.height} ${pritesh.weight} ${pritesh.bmi}`)
+
+
+        // Object with setter and getter
+
+        var person = {
+            _firstName: '',
+            _lastName: '',
+
+            // Setter method
+            set Name(firstName) {
+                if (typeof name === 'string') {
+                    this._firstName = fname;
+                    this._lastName = lname;
+
+                } else {
+                    console.error('Invalid input. Please provide a string.');
+                }
+            },
+
+
+            // Getter method
+            get Name() {
+                return this._firstName, _lastName;
+            }
+        };
+
+        // Using the setter
+        person.firstName = 'jay';
+        person.lastName = 'patel'
+        // Using the getter
+        console.log(person.firstName, person.lastName); // Outputs: John
+
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <h3>Bind Method in JS</h3>
+    </div>
+
+    <script>
+        const person = {
+            firstName: "Krisha",
+            lastName: "Mistry",
+            fullName: function () {
+                return this.firstName + " " + this.lastName;
+            }
+        };
+
+        const member = {
+            firstName: "Akshay",
+            lastName: "Pitroda"
+        }
+
+        let bindNameMethod = person.fullName.bind(member)
+        console.log(bindNameMethod());
+    </script>
+</body>
+
+</html>

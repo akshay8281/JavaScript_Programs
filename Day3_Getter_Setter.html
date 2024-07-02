@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        ///// Method 1 using Functions
+        // class Customer {
+        //     name = "Akshay"
+        //     age = 26
+        //     city = "Dholera"
+        //     #mobile = "9988776655"
+        //     //// Getter Method for accessing private object property in class
+        //     getMobile = () => {
+        //         const mob = this.#mobile
+        //         return mob
+        //     }
+        //     //// Setter Method for overriding private object property in class
+        //     setMobile = (set) => {
+        //         this.#mobile = set
+        //     }
+        // }
+
+        // const akshay = new Customer();
+        // /// Shows Error due to Private Symbol # in Mobile
+        // // console.log(akshay.#mobile)
+        // //// Convert it into function in class and access of private object in class
+        // console.log(akshay.getMobile())
+
+        // //// Set the value of object property which is private in class
+        // akshay.setMobile("1234567890")
+        // ////  calll the value of object property using getter
+        // console.log(akshay.getMobile())
+
+        class Customer {
+            name = "Akshay"
+            age = 26
+            city = "Dholera"
+            #mobile = "9988776655"
+            //// Getter Method for accessing private object property in class
+            get mob() {
+                return this.#mobile
+            }
+            //// Setter Method for overriding private object property in class
+            set mob(mob) {
+                this.#mobile = mob
+            }
+        }
+
+        const akshay = new Customer();
+        // console.log(akshay);
+        // console.log(akshay.mob);
+        Customer.mobile = "6655338877"
+        console.log(Customer.mobile);
+
+    </script>
+</body>
+
+</html>

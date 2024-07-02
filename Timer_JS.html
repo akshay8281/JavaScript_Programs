@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: lightgoldenrodyellow;
+
+        }
+
+        .container {
+            margin: 100px auto;
+            text-align: center;
+        }
+
+        button {
+            padding: 15px 40px;
+            font-size: 35px;
+            margin: 40px;
+            border-radius: 20px;
+            border: none;
+            color: navy;
+            background-color: lightgray;
+            font-weight: 700;
+            box-shadow: 0 0px 30px rgb(162, 153, 153);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2 id="timer"></h2>
+        <button id="btn_start">Start</button>
+        <button id="btn_end">End</button>
+        <button id="reset">Reset</button>
+
+    </div>
+
+    <script>
+        const timer = document.getElementById("timer")
+        const btnStart = document.getElementById("btn_start")
+        const btnEnd = document.getElementById("btn_end")
+        const reset = document.getElementById("reset")
+
+        timer.style.fontSize = "90px";
+        timer.style.color = "darkgreen";
+        timer.style.padding = "10px 15px";
+
+        let count = 0;
+        let myInterval = null;
+        btnStart.addEventListener("click", (e) => {
+            myInterval = setInterval(() => {
+                count++;
+                timer.innerHTML = count
+            }, 1000);
+        })
+
+        btnEnd.addEventListener("click", (e) => {
+            clearInterval(myInterval);
+        })
+
+        reset.addEventListener("click", (e) => {
+            clearInterval(myInterval); // Clear the interval if it's running
+            count = 0; // Reset the count to 0
+            timer.innerHTML = count; // Update the timer display
+            myInterval = setInterval(() => {
+                count++;
+                timer.innerHTML = count;
+            }, 1000);
+        })
+
+    </script>
+</body>
+
+</html>
