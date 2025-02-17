@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Element from JS</title>
+</head>
+
+<body style="background-color: black; color: white;">
+
+    <div class="divGeneration">
+        <h1>Div Creator from JavaScript</h1>
+    </div>
+
+</body>
+
+<div>
+    <ul class="stackLang">
+        <li>JavaScript</li>
+    </ul>
+</div>
+<div>
+    <ul class="codeLang">
+
+    </ul>
+</div>
+<script>
+    const divGeneration = document.querySelector("h1");
+    console.log(divGeneration);
+
+    divGeneration.style.color = "red";
+    divGeneration.style.backgroundColor = "white";
+    divGeneration.style.padding = "10px 30px";
+    divGeneration.style.margin = "15px";
+    divGeneration.style.borderRadius = "15px";
+    divGeneration.style.bold = "15px";
+    divGeneration.style.textAlign = "center";
+    divGeneration.style.fontSize = "15px";
+
+
+
+    const youDiv = document.createElement("div")
+    console.log(youDiv);
+    youDiv.className = "newDiv"
+    youDiv.id = "myId"
+    youDiv.setAttribute("title", "createDiv")
+    youDiv.style.backgroundColor = "white"
+    youDiv.style.color = "darkgreen"
+    youDiv.style.padding = "10px 30px"
+    youDiv.style.margin = "15px"
+    youDiv.style.marginTop = "25px"
+    youDiv.style.textAlign = "center"
+    youDiv.style.fontSize = "15px"
+    youDiv.style.borderRadius = "20px"
+    youDiv.innerHTML = "<h1> My Name is Akshay, and i live in Dholera </h1>"
+    document.body.appendChild(youDiv)
+
+
+    function addLang(language) {
+        const newLi = document.createElement("li");
+        newLi.textContent = language;  // Better than innerHTML for security
+        document.querySelector(".stackLang").appendChild(newLi);
+        return newLi;
+    }
+
+    addLang("Mojo").style.color = "blue";
+    addLang("Python").style.color = "yellow";
+    addLang("ReactJS").style.color = "orange";
+    addLang("Swift").style.color = "pink";
+    addLang("React - Redux").style.color = "purple";
+    addLang("MongoDB").style.color = "brown";
+
+
+    // Second Way
+
+    function codingLang(langName) {
+        const addLangLi = document.createElement('li');
+        addLangLi.appendChild(document.createTextNode(langName))
+        document.querySelector('.codeLang').appendChild(addLangLi)
+        return addLangLi
+    }
+
+    codingLang("DataBase").style.backgroundColor = "red"
+    codingLang("Safari").style.backgroundColor = "darkblue"
+    codingLang("C++").style.backgroundColor = "orange"
+
+
+    // edit the Content
+
+    const secondLang = document.querySelector("li:nth-child(2)")
+
+    // secondLang.innerHTML = "Akshay";
+    const newLi = document.createElement("li")
+    newLi.textContent = "Pitroda"
+    secondLang.replaceWith(newLi)
+
+    // Another Method for Edit Content
+
+    const ThirdLang = document.querySelector("li:nth-child(2)")
+    ThirdLang.outerHTML = "<li>TypeScript</li>"
+
+    //Remove Language
+
+    const removeLang = document.querySelector("li:last-child")
+    removeLang.remove()
+
+
+</script>
+
+</html>
