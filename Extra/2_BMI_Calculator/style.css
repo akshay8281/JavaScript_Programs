@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.container{
+  background-color: grey;
+  padding: 1vh;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  width: 50vw;   
+  margin: 20px auto;
+  border: 4px solid black; 
+  border-radius: 15px; 
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  background-color: lightgray;
+}
+.heading {
+  margin-bottom: 35px;
+  background-color: navy;
+  color: lightblue;
+  padding: 15px 30px;
+  border-radius: 15px;
+}
+label {
+  color: brown;
+  margin-right: 15px;
+  font-size: 20px;
+  font-weight: 700;
+}
+#height,
+#weight {
+  height: 6vh;
+  width: 20vw;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  background-color: rgb(172, 226, 244);
+  margin-bottom: 15px;
+}
+.btn {
+  background-color: black;
+  color: white;
+  padding: 7px 30px;
+  font-size: 20px;
+  font-weight: 700;
+  border-radius: 10px;
+}
+.button-container {
+  text-align: center;
+  width: 100%;
+  margin-top: 15px;
+}
+.results {
+  margin-top: 20px;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: 900;
+  font-size: 20px;
+}
+.weight-guide {
+  margin-top: 15px;
+  color: darkgreen;
+  font-size: 20px;
+  text-align: center;
+}
+.weight-guide p {
+  margin-bottom: 5px;
+}
