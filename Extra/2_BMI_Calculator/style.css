@@ -66,11 +66,16 @@ label {
   font-size: 20px;
 }
 .weight-guide {
-  margin-top: 15px;
+  margin-top: 10px;
   color: darkgreen;
-  font-size: 20px;
+  font-size: 13px;
   text-align: center;
 }
 .weight-guide p {
   margin-bottom: 5px;
+}
+.weightRange{
+  text-align: center;
+  margin-top: 10px;
+  color: navy;
 }
