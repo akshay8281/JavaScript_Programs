@@ -16,14 +16,15 @@
 
         <form class="form">
             <label for="guessField" id="guess">Guess a number</label>
-            <input type="text" id="guessField" class="guessField">
+            <input type="text" id="guessField" class="guessField" autocomplete="off">
             <br>
             <input type="submit" id="subt" value="Submit" class="guessSubmit">
+            <input type="reset" id="restartGame" value="Restart Game" class="restartGame">
         </form>
 
         <div class="resultParas">
-            <p>Previous Guess <span class="guessess"></span></p>
-            <p>Guesses Remaining <span class="lastResult">10</span></p>
+            <p><span class="prevGuess">Previous Guess : </span> <span class="guesses"></span></p>
+            <p> <span class="guessRemaining">Guesses Remaining</span> <span class="lastResult">10</span></p>
             <p class="lowHigh"></p>
         </div>
     </div>
