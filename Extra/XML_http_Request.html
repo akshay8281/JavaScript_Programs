@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Profile Fetch</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <style>
+        body {
+            margin: 20px;
+            padding: 20px;
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: linear-gradient(-45deg, #0f2027, #203a43, #2c5364, #4ca1af);
+            background-size: 400% 400%;
+            animation: gradientBG 8s ease infinite;
+            overflow: hidden;
+            perspective: 1000px;
+            position: relative;
+            color: #ffffff;
+            box-sizing: border-box;
+        }
+
+        @keyframes gradientBG {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .card-container {
+            width: 400px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(10px);
+            transform-style: preserve-3d;
+            transition: transform 0.5s ease-in-out;
+            margin: 20px;
+        }
+
+        .profile-pic {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 3px solid #ffffff;
+            margin: 20px auto;
+            display: none;
+        }
+
+        .btn-custom {
+            background: #ffffff;
+            color: #0f2027;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 12px 20px;
+            border-radius: 30px;
+            box-shadow: 0 5px 10px rgba(255, 255, 255, 0.2);
+            transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+            margin-top: 15px;
+        }
+
+        .btn-custom:hover {
+            background: #4ca1af;
+            color: white;
+            transform: translateY(-3px) scale(1.1);
+            box-shadow: 0px 10px 20px rgba(255, 255, 255, 0.3);
+        }
+
+        .info-box {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 15px;
+            border-radius: 10px;
+            margin: 10px 0;
+            font-size: 18px;
+            color: #ffffff;
+            transition: all 0.3s ease-in-out;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card-container">
+        <h2>GitHub Profile Fetch</h2>
+        <input type="text" class="form-control" id="githubLink" placeholder="Enter GitHub Profile Link">
+        <button class="btn btn-custom clickMe">Fetch Data</button>
+        <img class="profile-pic" src="" alt="Profile Picture">
+        <div class="info-container">
+            <div class="info-box"><label><strong>Name:</strong></label> <span class="name">-</span></div>
+            <div class="info-box"><label><strong>Username:</strong></label> <span class="userName">-</span></div>
+            <div class="info-box"><label><strong>Followers:</strong></label> <span class="followers-count">-</span>
+            </div>
+            <div class="info-box"><label><strong>Following:</strong></label> <span class="following-count">-</span>
+            </div>
+            <div class="info-box"><label><strong>Created At:</strong></label> <span class="created-at">-</span></div>
+            <div class="info-box"><label><strong>Updated At:</strong></label> <span class="updated-at">-</span></div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.querySelector(".clickMe").addEventListener("click", function () {
+            const githubLink = document.getElementById("githubLink").value.trim();
+            const githubRegex = /^(https?:\/\/)?(www\.)?github\.com\/([a-zA-Z0-9-]+)\/?$/;
+
+            if (!githubRegex.test(githubLink)) {
+                alert("Please enter a valid GitHub profile URL (e.g., https://github.com/username)");
+                return;
+            }
+
+            const username = githubLink.split("/").pop();
+            const apiUrl = `https://api.github.com/users/${username}`;
+
+            fetch(apiUrl)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error(`User not found!`);
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    document.querySelector(".userName").innerText = data.login;
+                    document.querySelector(".name").innerText = data.name || "N/A";
+                    document.querySelector(".followers-count").innerText = data.followers;
+                    document.querySelector(".following-count").innerText = data.following;
+                    document.querySelector(".created-at").innerText = new Date(data.created_at).toLocaleDateString();
+                    document.querySelector(".updated-at").innerText = new Date(data.updated_at).toLocaleDateString();
+                    document.querySelector(".profile-pic").src = data.avatar_url;
+                    document.querySelector(".profile-pic").style.display = "block";
+                    document.querySelectorAll(".info-box").forEach(box => box.style.display = "block");
+                })
+                .catch(error => {
+                    console.error("Error fetching data:", error);
+                    alert("Failed to load data. User not found!");
+                });
+        });
+    </script>
+</body>
+
+</html>
